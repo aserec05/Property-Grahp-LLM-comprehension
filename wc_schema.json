@@ -1,0 +1,92 @@
+﻿[
+  {
+    "StartLabels": [
+      "Match"
+    ],
+    "RelationshipType": "IN_TOURNAMENT",
+    "EndLabels": [
+      "Tournament"
+    ]
+  },
+  {
+    "StartLabels": [
+      "Person"
+    ],
+    "RelationshipType": "COACH_FOR",
+    "EndLabels": [
+      "Squad"
+    ]
+  },
+  {
+    "StartLabels": [
+      "Person"
+    ],
+    "RelationshipType": "IN_SQUAD",
+    "EndLabels": [
+      "Squad"
+    ]
+  },
+  {
+    "StartLabels": [
+      "Person"
+    ],
+    "RelationshipType": "PLAYED_IN",
+    "EndLabels": [
+      "Match"
+    ]
+  },
+  {
+    "StartLabels": [
+      "Person"
+    ],
+    "RelationshipType": "REPRESENTS",
+    "EndLabels": [
+      "Team"
+    ]
+  },
+  {
+    "StartLabels": [
+      "Person"
+    ],
+    "RelationshipType": "SCORED_GOAL",
+    "EndLabels": [
+      "Match"
+    ]
+  },
+  {
+    "StartLabels": [
+      "Squad"
+    ],
+    "RelationshipType": "FOR",
+    "EndLabels": [
+      "Tournament"
+    ]
+  },
+  {
+    "StartLabels": [
+      "Team"
+    ],
+    "RelationshipType": "NAMED",
+    "EndLabels": [
+      "Squad"
+    ]
+  },
+  {
+    "StartLabels": [
+      "Team"
+    ],
+    "RelationshipType": "PARTICIPATED_IN",
+    "EndLabels": [
+      "Tournament"
+    ]
+  },
+  {
+    "StartLabels": [
+      "Team"
+    ],
+    "RelationshipType": "PLAYED_IN",
+    "EndLabels": [
+      "Match"
+    ]
+  }
+]

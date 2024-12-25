@@ -1,0 +1,438 @@
+﻿[
+  {
+    "p": {
+      "identity": 45,
+      "labels": [
+        "Person"
+      ],
+      "properties": {
+        "dob": "1977-09-14",
+        "name": "Andreia",
+        "id": "39"
+      },
+      "elementId": "45"
+    },
+    "relationships": [
+      {
+        "identity": 13959,
+        "start": 45,
+        "end": 22,
+        "type": "REPRESENTED_BY", 
+        "properties": {},
+        "elementId": "13959",
+        "startNodeElementId": "45",
+        "endNodeElementId": "22"
+      },
+      {
+        "identity": 5957,
+        "start": 45,
+        "end": 2272,
+        "type": "PLAYED_FOR",  
+        "properties": {
+          "type": "Subbed On"  
+        },
+        "elementId": "5957",
+        "startNodeElementId": "45",
+        "endNodeElementId": "2272"
+      },
+      {
+        "identity": 6188,
+        "start": 45,
+        "end": 2293,
+        "type": "PLAYED_IN",
+        "properties": {
+          "type": "Started"
+        },
+        "elementId": "6188",
+        "startNodeElementId": "45",
+        "endNodeElementId": "2293"
+      }
+    ],
+    "relatedNodes": [
+      {
+        "identity": 22,
+        "labels": [
+          "Club"  
+        ],
+        "properties": {
+          "name": "Brazil",
+          "id": "1882881"
+        },
+        "elementId": "22"
+      },
+      {
+        "identity": 2272,
+        "labels": [
+          "Match"
+        ],
+        "properties": {
+          "date": "2007-09-23",
+          "stage": "Final"  
+        },
+        "elementId": "2272"
+      },
+      {
+        "identity": 2293,
+        "labels": [
+          "Game" 
+        ],
+        "properties": {
+          "date": "2007-09-15",
+          "stage": "First stage",
+          "id": "56328"
+        },
+        "elementId": "2293"
+      }
+    ]
+  },
+  {
+    "p": {
+      "identity": 45,
+      "labels": [
+        "Player" 
+      ],
+      "properties": {
+        "dob": "1982-11-01",
+        "name": "Elaine",
+        "id": "201416"
+      },
+      "elementId": "45"
+    },
+    "relationships": [
+      {
+        "identity": 13975,
+        "start": 46,
+        "end": 22,
+        "type": "REPRESENTS",
+        "properties": {},
+        "elementId": "13975",
+        "startNodeElementId": "46",
+        "endNodeElementId": "22"
+      },
+      {
+        "identity": 5683,
+        "start": 46,
+        "end": 2247,
+        "type": "WON",  
+        "properties": {
+          "type": "Started"
+        },
+        "elementId": "5683",
+        "startNodeElementId": "46",
+        "endNodeElementId": "2247"
+      },
+      {
+        "identity": 9181,
+        "start": 46,
+        "end": 2281,
+        "type": "PLAYED_IN",
+        "properties": {
+          "type": "Started"
+        },
+        "elementId": "9181",
+        "startNodeElementId": "46",
+        "endNodeElementId": "2281"
+      }
+    ],
+    "relatedNodes": [
+      {
+        "identity": 22,
+        "labels": [
+          "Team"
+        ],
+        "properties": {
+          "name": "Brazil",
+          "id": "1882881"
+        },
+        "elementId": "22"
+      },
+      {
+        "identity": 2247,
+        "labels": [
+          "Match"
+        ],
+        "properties": {
+          "date": "2007-09-21",  
+          "stage": "First stage",
+          "id": "56326"
+        },
+        "elementId": "2247"
+      },
+      {
+        "identity": 2281,
+        "labels": [
+          "Match"
+        ],
+        "properties": {
+          "date": "2007-09-27",
+          "stage": "Semi-finals",
+          "id": "56334"
+        },
+        "elementId": "2281"
+      }
+    ]
+  },
+  {
+    "p": {
+      "identity": 47,
+      "labels": [
+        "Person"
+      ],
+      "properties": {
+        "dob": "1982-07-06",
+        "name": "Aline",
+        "id": "212298"
+      },
+      "elementId": "47"
+    },
+    "relationships": [
+      {
+        "identity": 13974,
+        "start": 47,
+        "end": 22,
+        "type": "REPRESENTS",
+        "properties": {},
+        "elementId": "13974",
+        "startNodeElementId": "47",
+        "endNodeElementId": "22"
+      },
+      {
+        "identity": 5894,
+        "start": 47,
+        "end": 2266,
+        "type": "FOR", 
+        "properties": {
+          "type": "Subbed On" 
+        },
+        "elementId": "5894",
+        "startNodeElementId": "47",
+        "endNodeElementId": "2266"
+      },
+      {
+        "identity": 9401,
+        "start": 47,
+        "end": 2301,
+        "type": "PLAYED_IN",
+        "properties": {
+          "type": "Started"
+        },
+        "elementId": "9401",
+        "startNodeElementId": "47",
+        "endNodeElementId": "2301"
+      }
+    ],
+    "relatedNodes": [
+      {
+        "identity": 22,
+        "labels": [
+          "Team"
+        ],
+        "properties": {
+          "name": "Brazil",
+          "id": "1882881"
+        },
+        "elementId": "22"
+      },
+      {
+        "identity": 2266,
+        "labels": [
+          "Match"
+        ],
+        "properties": {
+          "date": "2011-07-04", 
+          "stage": "First Stage",
+          "id": "300144429"
+        },
+        "elementId": "2266"
+      },
+      {
+        "identity": 2301,
+        "labels": [
+          "Match"
+        ],
+        "properties": {
+          "date": "2007-09-12",
+          "stage": "First stage",
+          "id": "56331"
+        },
+        "elementId": "2301"
+      }
+    ]
+  },
+  {
+    "p": {
+      "identity": 48,
+      "labels": [
+        "Person"
+      ],
+      "properties": {
+        "dob": "1974-10-03",
+        "name": "Tania",
+        "id": "36"
+      },
+      "elementId": "48"
+    },
+    "relationships": [
+      {
+        "identity": 13973,
+        "start": 48,
+        "end": 22,
+        "type": "REPRESENTS",
+        "properties": {},
+        "elementId": "13973",
+        "startNodeElementId": "48",
+        "endNodeElementId": "22"
+      },
+      {
+        "identity": 11532,
+        "start": 48,
+        "end": 2240,
+        "type": "PLAYED_IN",
+        "properties": {
+          "minuteOn": "66'",
+          "type": "Subbed Off" 
+        },
+        "elementId": "11532",
+        "startNodeElementId": "48",
+        "endNodeElementId": "2240"
+      },
+      {
+        "identity": 12462,
+        "start": 48,
+        "end": 2326,
+        "type": "PLAYED_IN",
+        "properties": {
+          "minuteOn": "83'",
+          "type": "Subbed On"
+        },
+        "elementId": "12462",
+        "startNodeElementId": "48",
+        "endNodeElementId": "2326"
+      }
+    ],
+    "relatedNodes": [
+      {
+        "identity": 22,
+        "labels": [
+          "Team"
+        ],
+        "properties": {
+          "name": "Brazil",
+          "id": "1882881"
+        },
+        "elementId": "22"
+      },
+      {
+        "identity": 2240,
+        "labels": [
+          "Match"
+        ],
+        "properties": {
+          "date": "1995-06-09",
+          "stage": "Quarter-finals", 
+          "id": "21907"
+        },
+        "elementId": "2240"
+      },
+      {
+        "identity": 2326,
+        "labels": [
+          "Match"
+        ],
+        "properties": {
+          "date": "1995-06-05",
+          "stage": "Group Matches",
+          "id": "21902"
+        },
+        "elementId": "2326"
+      }
+    ]
+  },
+  {
+    "p": {
+      "identity": 49,
+      "labels": [
+        "Person"
+      ],
+      "properties": {
+        "dob": "1986-07-08",
+        "name": "Renata Costa",
+        "id": "190354"
+      },
+      "elementId": "49"
+    },
+    "relationships": [
+      {
+        "identity": 13977,
+        "start": 49,
+        "end": 22,
+        "type": "REPRESENTS",
+        "properties": {},
+        "elementId": "13977",
+        "startNodeElementId": "49",
+        "endNodeElementId": "22"
+      },
+      {
+        "identity": 9184,
+        "start": 49,
+        "end": 2281,
+        "type": "PLAYED_IN",
+        "properties": {
+          "type": "Started"
+        },
+        "elementId": "9184",
+        "startNodeElementId": "49",
+        "endNodeElementId": "2281"
+      },
+      {
+        "identity": 9040,
+        "start": 49,
+        "end": 2268,
+        "type": "SUBSTITUTED_IN",  
+        "properties": {
+          "type": "Started"
+        },
+        "elementId": "9040",
+        "startNodeElementId": "49",
+        "endNodeElementId": "2268"
+      }
+    ],
+    "relatedNodes": [
+      {
+        "identity": 22,
+        "labels": [
+          "Team"
+        ],
+        "properties": {
+          "name": "Brazil",
+          "id": "1882881"
+        },
+        "elementId": "22"
+      },
+      {
+        "identity": 2281,
+        "labels": [
+          "Match"
+        ],
+        "properties": {
+          "date": "2007-09-27",
+          "stage": "Semi-finals",
+          "id": "56334"
+        },
+        "elementId": "2281"
+      },
+      {
+        "identity": 2268,
+        "labels": [
+          "Match"
+        ],
+        "properties": {
+          "date": "2011-07-06",
+          "stage": "Final", 
+          "id": "300144454"
+        },
+        "elementId": "2268"
+      }
+    ]
+  }
+]
