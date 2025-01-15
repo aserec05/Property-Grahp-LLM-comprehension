@@ -105,6 +105,7 @@ def pipeline(graph, format_graph, query):
 
 
 def create_graph_for_wc(data):
+    """Create a networkx object from json"""
     graph_nx = nx.Graph()
     for item in data:
         node_n = item['n']
@@ -119,29 +120,30 @@ def create_graph_for_wc(data):
 
 
 def create_graph_for_sub_wc(data):
+    """Create a networkx object from json"""
     graph_nx = nx.Graph()
 
     for entry in data:
         main_node = entry['p']
         graph_nx.add_node(
-            main_node['identity'], 
-            labels=main_node['labels'], 
+            main_node['identity'],
+            labels=main_node['labels'],
             **main_node['properties']
         )
 
         for related_node in entry['relatedNodes']:
             graph_nx.add_node(
-                related_node['identity'], 
-                labels=related_node['labels'], 
+                related_node['identity'],
+                labels=related_node['labels'],
                 **related_node['properties']
             )
 
         for relationship in entry['relationships']:
             graph_nx.add_edge(
-                relationship['start'], 
-                relationship['end'], 
-                id=relationship['identity'], 
-                label=relationship['type'], 
+                relationship['start'],
+                relationship['end'],
+                id=relationship['identity'],
+                label=relationship['type'],
                 **relationship['properties']
             )
     return graph_nx
@@ -211,6 +213,7 @@ def create_graph_for_synthea(folder):
 
 
 def create_node_string(graph):
+    """Make nodes for incident encoding"""
     node_descriptions = []
     for node, props in graph.nodes(data=True):
         labels = props.pop('labels', [])
@@ -221,6 +224,7 @@ def create_node_string(graph):
 
 
 def encode_graph(graph):
+    """Encode the graph in the incident format"""
     nodes_string = create_node_string(graph)
     output = "G describes a graph among nodes: \n%s.\n" % nodes_string
     if graph.edges():
