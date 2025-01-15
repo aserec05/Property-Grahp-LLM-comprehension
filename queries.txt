@@ -1,0 +1,2 @@
+MATCH (n) RETURN DISTINCT labels(n) AS NodeLabels
+MATCH (p:Person)-[:SCORED_GOAL]->(m:Match) RETURN m, collect(p) AS Players
