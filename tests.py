@@ -94,7 +94,7 @@ def pipeline(graph, format_graph, query):
     prompt_template = ChatPromptTemplate.from_messages(
         [("system", system_template), ("user", "{query}")])
     prompt = prompt_template.invoke({
-        "format" : format_graph,
+        "format": format_graph,
         "graph": graph,
         "query": query
     })
@@ -105,46 +105,46 @@ def pipeline(graph, format_graph, query):
 
 
 def create_graph_for_wc(data):
-    graph = nx.Graph()
+    graph_nx = nx.Graph()
     for item in data:
         node_n = item['n']
-        graph.add_node(node_n['identity'], labels=node_n['labels'], **node_n['properties'])
+        graph_nx.add_node(node_n['identity'], labels=node_n['labels'], **node_n['properties'])
 
         node_m = item['m']
-        graph.add_node(node_m['identity'], labels=node_m['labels'], **node_m['properties'])
+        graph_nx.add_node(node_m['identity'], labels=node_m['labels'], **node_m['properties'])
 
         edge_r = item['r']
-        graph.add_edge(edge_r['start'], edge_r['end'], id=edge_r['identity'], label=edge_r['type'], **edge_r['properties'])
-    return graph
+        graph_nx.add_edge(edge_r['start'], edge_r['end'], id=edge_r['identity'], label=edge_r['type'], **edge_r['properties'])
+    return graph_nx
 
 
 def create_graph_for_sub_wc(data):
-    graph = nx.Graph()
+    graph_nx = nx.Graph()
 
     for entry in data:
         main_node = entry['p']
-        graph.add_node(
+        graph_nx.add_node(
             main_node['identity'], 
             labels=main_node['labels'], 
             **main_node['properties']
         )
 
         for related_node in entry['relatedNodes']:
-            graph.add_node(
+            graph_nx.add_node(
                 related_node['identity'], 
                 labels=related_node['labels'], 
                 **related_node['properties']
             )
 
         for relationship in entry['relationships']:
-            graph.add_edge(
+            graph_nx.add_edge(
                 relationship['start'], 
                 relationship['end'], 
                 id=relationship['identity'], 
                 label=relationship['type'], 
                 **relationship['properties']
             )
-    return graph
+    return graph_nx
 
 
 def create_graph_for_synthea(folder):
@@ -254,10 +254,9 @@ if __name__ == "__main__":
     with open('sub_graph_wc_1.json', 'r',  encoding='utf-8-sig') as file:
         data = json.load(file)
 
-    graph = create_graph_for_sub_wc(data)
-    encoded_graph = encode_graph(graph)
+    encoded_graph = encode_graph(create_graph_for_sub_wc(data))
     print(len(encoded_graph))
-    for query in queries:
-        pipeline_pydantic(encoded_graph, "Incident", query)
+    for q in queries:
+        pipeline_pydantic(encoded_graph, "Incident", q)
     # pipeline_pydantic(encoded_graph, "Incident", "MATCH (n) RETURN DISTINCT labels(n) AS NodeLabels")
     # pipeline(encoded_graph, "Incident", "MATCH (p:Person)-[:SCORED_GOAL]->(m:Match) RETURN m, collect(p) AS Players")
