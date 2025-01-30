@@ -1,2 +1,12 @@
 MATCH (n) RETURN DISTINCT labels(n) AS NodeLabels
 MATCH (p:Person)-[:SCORED_GOAL]->(m:Match) RETURN m, collect(p) AS Players
+MATCH (n) RETURN DISTINCT labels(n) AS NodeLabels, keys(n) AS Properties
+MATCH ()-[r]->() RETURN DISTINCT type(r) AS RelationshipTypes, keys(r) AS Properties
+MATCH (n)-[r]->(m) RETURN labels(n) AS StartLabels, type(r) AS RelationshipType, labels(m) AS EndLabels
+MATCH (p:Person)-[:SCORED_GOAL]->(m:Match) RETURN m, collect(p) AS Players
+MATCH (t:Team)-[:PARTICIPATED_IN]->(tr:Tournament) RETURN t, collect(tr) AS Tournaments
+MATCH (p:Person)-[:SCORED_GOAL]->(m:Match) WITH p, count(m) AS MatchCount WHERE MatchCount >= 2 RETURN p
+MATCH (t1:Team)-[:PARTICIPATED_IN]->(tr:Tournament)<-[:PARTICIPATED_IN]-(t2:Team) RETURN t1, t2
+MATCH (p:Person)-[:REPRESENTS]->(t:Team)-[:PARTICIPATED_IN]->(tr:Tournament) RETURN tr, collect(DISTINCT t) AS Teams, collect(DISTINCT p) AS Players
+MATCH (p:Person)-[:REPRESENTS]->(t:Team) RETURN t, count(p) AS PlayerCount
+MATCH (p:Person)-[:SCORED_GOAL]->(m:Match)<-[:PLAYED_IN]-(t:Team) RETURN t, avg(size((p)-[:SCORED_GOAL]->())) AS AvgGoals ORDER BY AvgGoals DESC
