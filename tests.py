@@ -9,18 +9,12 @@ from langchain_ollama import ChatOllama
 # from langchain_core.messages import HumanMessage, SystemMessage
 from langchain_core.prompts import ChatPromptTemplate
 from langchain.output_parsers import PydanticOutputParser
-from pydantic import BaseModel, Field
+from models import QueryResponse
+
 
 
 model = ChatOllama(model="llama3.2")
 
-
-class QueryResponse(BaseModel):
-    """Pydantic model for structured output"""
-    query: str
-    result: List[Dict] = Field(
-        ..., description="List of result dictionaries where each dictionary represents a record."
-    )
 
 
 def enforce_strict_format(prompt: str, query: str) -> str:
