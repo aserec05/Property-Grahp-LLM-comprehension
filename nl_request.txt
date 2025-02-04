@@ -1,0 +1,12 @@
+What are all the distinct types of nodes in the graph ?
+What are all the distinct types of relationships in the graph ?
+What are the properties associated with each type of node in the graph ?
+What are the properties associated with each type of relationship in the graph ?
+What are the relationships between node types and their connected node types ?
+Which players scored in each match ?
+What tournament did each team participate in ?
+Which player scored in at least two matches ?
+Which teams participated in the same tournament ?
+Which teams and players were associated with each tournament ?
+How many players represent each team ?
+What is the avarage number of goals scored by players for each team ?

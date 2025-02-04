@@ -77,10 +77,31 @@ def pipeline_pydantic(graph, format_graph, query):
 
         parsed_response = parser.parse(response.content)
         print("Parsed response:", parsed_response)
+        return parsed_response
 
     except Exception as e:
         print(f"Error during model invocation or response parsing: {e}")
 
+def pipeline_NL_to_query(graph, format_graph, query):
+    """
+    pipeline that get a query in natural langage and ask the query for this to the llm
+    """
+    system_template = "You are a graph expert. Here is a graph schema in the {format} format : {graph}. \
+        Answer with ONE and only ONE query in Cypher. Don't say anything except the query."
+
+    prompt_template = ChatPromptTemplate.from_messages(
+        [("system", system_template), ("user", "{query}")]
+    )
+    prompt = prompt_template.invoke({
+        "format": format_graph,
+        "graph": graph,
+        "query": query
+    })
+
+    prompt.to_messages()
+    response = model.invoke(prompt)
+    print(response.content)
+    return response.content
 
 def pipeline(graph, format_graph, query):
     """Simple pipeline to interact with the LLM"""
@@ -96,6 +117,7 @@ def pipeline(graph, format_graph, query):
     response = model.invoke(prompt)
     print(response.usage_metadata)
     print(response.content)
+    return response.content
 
 
 def create_graph_for_wc(data):
@@ -246,15 +268,25 @@ def encode_graph(graph):
 
 
 if __name__ == "__main__":
-    with open('queries.txt', 'r', encoding='utf-8-sig') as file:
+    f = 'nl_request.txt'
+    #f = 'queries.txt'
+    with open(f, 'r', encoding='utf-8-sig') as file:
         queries = file.readlines()
 
-    with open('sub_graph_wc_1.json', 'r',  encoding='utf-8-sig') as file:
+    #f = 'sub_graph_wc_1.json'
+    f = 'wc_schema.json'
+    with open(f, 'r',  encoding='utf-8-sig') as file:
         data = json.load(file)
 
-    encoded_graph = encode_graph(create_graph_for_sub_wc(data))
-    print(len(encoded_graph))
+    #encoded_graph = encode_graph(create_graph_for_sub_wc(data))
+    #print(len(encoded_graph))
+    i=0
     for q in queries:
-        pipeline_pydantic(encoded_graph, "Incident", q)
-    # pipeline_pydantic(encoded_graph, "Incident", "MATCH (n) RETURN DISTINCT labels(n) AS NodeLabels")
-    # pipeline(encoded_graph, "Incident", "MATCH (p:Person)-[:SCORED_GOAL]->(m:Match) RETURN m, collect(p) AS Players")
+        i+=1
+        print(f"request {i}:")
+        #pipeline_pydantic(encoded_graph, "Incident", q)
+        res = pipeline_NL_to_query(data, "json", q)
+        print("-------------------")
+        with open('llm_results.txt', 'a') as file:
+            file.write(res + '\n---\n')
+
