@@ -1,0 +1,24 @@
+None
+---
+query='MATCH (n) RETURN n.type, COUNT(DISTINCT n.type) AS count' result=[{'type': 'PLAYED_IN', 'count': 3}, {'type': 'SUBBED_ON', 'count': 1}, {'type': 'STARTED', 'count': 2}, {'type': 'REPRESENTS', 'count': 4}, {'type': 'REPRESENTED_BY', 'count': 1}, {'type': 'PLAYED_IN', 'count': 3}, {'type': 'SUBSTITUTED_IN', 'count': 1}, {'type': 'WON', 'count': 1}, {'type': 'FOR', 'count': 1}, {'type': 'SUBBED_OFF', 'count': 1}]
+---
+query='MATCH (n) RETURN n.type AS type, n.properties AS properties' result=[{'type': '[]', 'properties': {}}, {'type': '45', 'properties': {'dob': '1982-11-01', 'name': 'Elaine', 'id': '201416'}}, {'type': '22', 'properties': {'name': 'Brazil', 'id': '1882881'}}, {'type': '2272', 'properties': {'date': '2007-09-23', 'stage': 'Final'}}, {'type': '2293', 'properties': {'date': '2007-09-15', 'stage': 'First stage', 'id': '56328'}}, {'type': '2247', 'properties': {'date': '2007-09-21', 'stage': 'First stage', 'id': '56326'}}, {'type': '2281', 'properties': {'date': '2007-09-27', 'stage': 'Semi-finals', 'id': '56334'}}, {'type': '46', 'properties': {}}, {'type': '47', 'properties': {'dob': '1982-07-06', 'name': 'Aline', 'id': '212298'}}, {'type': '2266', 'properties': {'date': '2011-07-04', 'stage': 'First Stage', 'id': '300144429'}}, {'type': '2301', 'properties': {'date': '2007-09-12', 'stage': 'First stage', 'id': '56331'}}, {'type': '48', 'properties': {'dob': '1974-10-03', 'name': 'Tania', 'id': '36'}}, {'type': '2240', 'properties': {'date': '1995-06-09', 'stage': 'Quarter-finals', 'id': '21907'}}, {'type': '2326', 'properties': {'date': '1995-06-05', 'stage': 'Group Matches', 'id': '21902'}}, {'type': '49', 'properties': {'dob': '1986-07-08', 'name': 'Renata Costa', 'id': '190354'}}]
+---
+query="MATCH (n) WHERE NOT n.label IN ['Person', 'Team'] AND n.type IN ['PLAYED_FOR', 'STARTED', 'SUBBED_ON', 'REPRESENTS', 'FOR', 'PLAYED_IN', 'WON', 'SUBSTITUTED_IN', 'SUBBED_OFF', 'MINUTE_ON'] RETURN *" result=[{'property1': 'label', 'property2': None}, {'property1': 'type', 'property2': 'PLAYED_FOR'}, {'property1': 'type', 'property2': 'STARTED'}, {'property1': 'type', 'property2': 'SUBBED_ON'}, {'property1': 'label', 'property2': None}, {'property1': 'type', 'property2': 'REPRESENTS'}, {'property1': 'type', 'property2': 'FOR'}, {'property1': 'type', 'property2': 'PLAYED_IN'}, {'property1': 'type', 'property2': 'WON'}, {'property1': 'type', 'property2': 'SUBSTITUTED_IN'}, {'property1': 'type', 'property2': 'SUBBED_OFF'}, {'property1': 'type', 'property2': 'MINUTE_ON'}]
+---
+None
+---
+query="MATCH (m:Match)-[:PLAYED_IN]->(g:Game)-[:PLAYED_FOR]->(p:Person) WHERE m.stage = 'Final' OR m.stage = 'Semi-finals' OR m.stage = 'Quarter-finals' RETURN m.date, p.name AS ScoredPlayer" result=[{'date': '2007-09-23', 'ScoredPlayer': None}, {'date': '2007-09-21', 'ScoredPlayer': 'Aline'}, {'date': '1995-06-09', 'ScoredPlayer': None}]
+---
+query='MATCH (t:Team) RETURN t.name AS "Team Name", COLLECT(DISTINCT labels(t)) AS "Tournament(s)",\n    WITH t, COLLECT(DISTINCT l IN labels(t) WHERE l != \'Team\') AS tournaments,\n    FILTER(tournaments[0] == \'Match\' OR tournaments[0] == \'Game\')\n    RETURN t.name AS TeamName, [tournaments] AS Tournaments\n  UNION ALL\n    MATCH (t:Team) RETURN t.name AS "Team Name", COLLECT(DISTINCT labels(t)) AS "Tournament(s)",\n      WITH t, COLLECT(DISTINCT l IN labels(t) WHERE l != \'Team\') AS tournaments,\n      FILTER(tournaments[0] == \'Match\')\n    UNION ALL\n      MATCH (t:Team) RETURN t.name AS "Team Name", COLLECT(DISTINCT labels(t)) AS "Tournament(s)",\n        WITH t, COLLECT(DISTINCT l IN labels(t) WHERE l != \'Team\') AS tournaments,\n        FILTER(tournaments[0] == \'Group Matches\')\n  ORDER BY t.name' result=[{'Team Name': 'Brazil', 'Tournaments': ['Match']}, {'Team Name': 'Brazil', 'Tournaments': ['Game', 'Match']}]
+---
+None
+---
+query='MATCH (t:Team)-[:PLAYED_IN]->(m:Match) RETURN t.name AS teamName' result=[{'teamName': 'Brazil'}]
+---
+None
+---
+query='MATCH (t:Team)-[:REPRESENTED_BY]->(p:Player) RETURN t.name, count(DISTINCT p) AS num_players' result=[{'name': 'Brazil', 'num_players': 1}]
+---
+query="MATCH (team:Team)-[:REPRESENTED_BY]->(player:Player)<-[:PLAYED_IN|PLAYED_FOR]-() RETURN team.name, avg(CASE WHEN type = 'GOAL' THEN 1.0 ELSE 0 END) AS average_goals" result=[{'name': 'Brazil', 'average_goals': 2.0}]
+---
