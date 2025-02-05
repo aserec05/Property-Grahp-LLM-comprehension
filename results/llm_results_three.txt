@@ -1,0 +1,24 @@
+query='CALL db.labels() YIELD label, count AS cnt RETURN label, cnt' result=[{'label': 'Person', 'cnt': 3}, {'label': 'Player', 'cnt': 1}, {'label': 'Team', 'cnt': 1}, {'label': '', 'cnt': 2}, {'label': 'Match', 'cnt': 4}, {'label': 'Game', 'cnt': 1}]
+---
+None
+---
+None
+---
+query="MATCH (n) RETURN n.type AS type, collect(n.label) as labels, n.id AS id, n.properties as properties;\nmATCH (m) WHERE m.type='Subbed On' RETURN m.type AS type, collect(m.label) as labels, m.id AS id, m.properties as properties;\nmatch (m) WHERE m.type='Started' RETURN m.type AS type, collect(m.label) as labels, m.id AS id, m.properties as properties;\nmATCH (m) WHERE m.type='Subbed Off' RETURN m.type AS type, collect(m.label) as labels, m.id AS id, m.properties as properties;\nmatch (m) WHERE m.type='Represented By' RETURN m.type AS type, collect(m.label) as labels, m.id AS id, m.properties as properties;\nmatch (m) WHERE m.type='RepresentS' RETURN m.type AS type, collect(m.label) as labels, m.id AS id, m.properties as properties;\nmatch (m) WHERE m.type='PLAYED_FOR' RETURN m.type AS type, collect(m.label) as labels, m.id AS id, m.properties as properties;\nmatch (m) WHERE m.type='PLAYED_IN' RETURN m.type AS type, collect(m.label) as labels, m.id AS id, m.properties as properties;\nmatch (m) WHERE m.type='FOR' RETURN m.type AS type, collect(m.label) as labels, m.id AS id, m.properties as properties;\nmatch (m) WHERE m.type='SUBSTITUTED_IN' RETURN m.type AS type, collect(m.label) as labels, m.id AS id, m.properties as properties;\nmatch (m) WHERE m.type='WON' RETURN m.type AS type, collect(m.label) as labels, m.id AS id, m.properties as properties;\nmatch (m) WHERE m.type='Represented By' RETURN m.type AS type, collect(m.label) as labels, m.id AS id, m.properties as properties;\nmatch (m) WHERE m.type='PLAYED_IN' RETURN m.type AS type, collect(m.label) as labels, m.id AS id, m.properties as properties" result=[{'type': 'Represented By', 'labels': ['REPRESENTED_BY'], 'id': '13959', 'properties': {'id': '201416', 'dob': '1982-11-01', 'name': 'Elaine'}}, {'type': 'Subbed On', 'labels': ['PLAYED_FOR', 'SUBBED_ON'], 'id': '5957', 'properties': {'id': '56328', 'date': '2007-09-15', 'stage': 'First stage'}}, {'type': 'Started', 'labels': ['PLAYED_IN', 'STARTED'], 'id': '6188', 'properties': {'id': '56328', 'date': '2007-09-15', 'stage': 'First stage'}}, {'type': 'Subbed Off', 'labels': ['PLAYED_IN', 'SUBBED_OFF'], 'id': '11532', 'properties': {'id': '21907', 'minuteOn': "66'"}}, {'type': 'Represented By', 'labels': ['REPRESENTED_BY'], 'id': '13959', 'properties': {'id': '201416', 'dob': '1982-11-01', 'name': 'Elaine'}}, {'type': 'RepresentS', 'labels': ['REPRESENTS'], 'id': '5683', 'properties': {}}, {'type': 'PLAYED_FOR', 'labels': ['PLAYED_FOR'], 'id': '5957', 'properties': {'id': '56328', 'date': '2007-09-15', 'stage': 'First stage'}}, {'type': 'PLAYED_IN', 'labels': ['PLAYED_IN'], 'id': '6188', 'properties': {'id': '56328', 'date': '2007-09-15', 'stage': 'First stage'}}, {'type': 'FOR', 'labels': ['FOR'], 'id': '9040', 'properties': {'id': '9040', 'label': 'SUBSTITUTED_IN'}}, {'type': 'SUBSTITUTED_IN', 'labels': ['SUBSTITUTED_IN'], 'id': '9040', 'properties': {'id': '9040', 'date': '2007-09-15', 'stage': 'First stage'}}, {'type': 'WON', 'labels': ['WON'], 'id': '', 'properties': {}}]
+---
+query='MATCH (n) RETURN n.type AS node_type, type(n) AS related_type' result=[{'node_type': '', 'related_type': '[]'}, {'node_type': '[Player]', 'related_type': '[Person]'}, {'node_type': '[Team]', 'related_type': '[]'}, {'node_type': '[Match]', 'related_type': '[]'}, {'node_type': '[Game]', 'related_type': '[Match]'}]
+---
+None
+---
+None
+---
+query='\n    MATCH (n:Person) \n    WHERE NOT n:Player\n    OPTIONAL MATCH (n)-[:PLAYED_IN]->(m:Match)\n    WITH COUNT(m) as score_count, COLLECT(DISTINCT m.date) as dates\n    FILTER (score_count > 1 OR size(dates) == 0)\n    RETURN n.name AS PlayerName, date(m.date)\n    ORDER BY date(m.date)\n  ' result=[{'PlayerName': 'Aline', 'date': '2007-09-12'}, {'PlayerName': 'Renata Costa', 'date': '2011-07-06'}]
+---
+None
+---
+None
+---
+query='\n    MATCH (t:Team)-[:REPRESENTED_BY]->(p:Person)\n    WITH t, p\n    ORDER BY t.name ASC\n    RETURN t.name AS teamName, COUNT(DISTINCT p) as numPlayers\n    GROUP BY t.name\n  ' result=[{'teamName': 'Brazil', 'numPlayers': 5}]
+---
+None
+---

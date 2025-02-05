@@ -1,0 +1,48 @@
+MATCH (n) RETURN n labeling as l SET l.type = TYPE(n) GROUP l BY l ORDER BY len(l.type) DESC
+---
+MATCH (n) RETURN DISTINCT n.relationshipType
+---
+MATCH (n)
+RETURN n.StartLabels, n.EndLabels
+---
+MATCH (n:Node)
+OPTIONAL MATCH (m:Node)-[:RelationshipType]->(o:Node)
+RETURN n, m, o, RelationshipType
+---
+MATCH (n) RETURN n.type AS type, relationships(type(n)) AS connected_type
+---
+MATCH (m:Match)-[r:SCORED_GOAL]- (p:Person)
+RETURN m, COLLECT(p) AS scorers
+---
+MATCH (t:Tournament)-[:FOR]->(s:Squad)<-[:IN_SQUAD]-(p:Person)
+MATCH (t:Tournament)-[:PARTICIPATED_IN]->(m:Match), (m)-[:PLAYED_IN]->(s)
+WHERE t <> m
+RETURN DISTINCT t
+---
+MATCH (p:Person)-[:SCORED_GOAL]->(m:Match)
+WHERE p.name IN COLLECT(DISTINCT m.player) AND COUNT(m) >= 2
+RETURN p, COUNT(m)
+---
+MATCH (t:Team)-[:PARTICIPATED_IN]->(tt:Tournament)
+RETURN t.name AS TeamName, tt.name AS TournamentName
+---
+MATCH (t:Team)-[:NAMED]->(s:Squad), (m:Match)<-[:PLAYED_IN]-(p:Person)
+WHERE t IS NOT NULL AND m IS NOT NULL
+WITH collect(DISTINCT p) AS players, collect(DISTINCT s) AS squads, collect(DISTINCT t) AS teams
+UNWIND squads AS squad, UNWIND players AS player
+RETURN {team: teams[0], squad: squad, player: player}
+---
+MATCH (t:Team)-[:REPRESENTS]->(p:Person)
+WITH t, COUNT(p) AS num_players
+GROUP BY t
+RETURN t, num_players
+---
+MATCH t:Team
+WITH t, COLLECT(DISTINCT m:Match WHERE m EndLabel = 'Scored_Goal') AS matches
+UNWIND matches AS match
+WHERE exists(m IN match.rels where m.property = 'played_in' AND m.type = 'match')
+  WITH t, COUNT(CASE WHEN m ENDLabel = 'Scored_Goal' THEN 1 ELSE NULL END) as goals
+  WHERE t IN (m.rels WHERE rel.property = 'named') OR t IN (m.rels WHERE rel.property = 'participated_in')
+GROUP BY t
+RETURN t, avg(goals)
+---
