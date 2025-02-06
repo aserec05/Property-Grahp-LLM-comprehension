@@ -1,8 +1,9 @@
-from typing import Optional, List, Dict
+from typing import Optional, Dict
+import json
 from langchain_core.prompts import ChatPromptTemplate
 from langchain.output_parsers import PydanticOutputParser
-from libs.models import QueryResponse
 from langchain_ollama import ChatOllama
+from libs.models import QueryResponse
 
 model = ChatOllama(model="llama3.2")
 

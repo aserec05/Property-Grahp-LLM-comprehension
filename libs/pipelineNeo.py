@@ -21,6 +21,8 @@ class Neo4jPipeline:
         for query in queries:
             result = self.run_query(query)
             responses.append(QueryResponse(query=query, result=result))
+        #result = self.run_query(queries[0])
+        #responses.append(QueryResponse(query=queries[0], result=result))
         return responses
 
     @staticmethod
@@ -32,12 +34,12 @@ if __name__ == "__main__":
     NEO4J_URI = "bolt://localhost:7687"  # Modifier selon votre configuration
     NEO4J_USER = "neo4j"
     NEO4J_PASSWORD = "password"
-    QUERIES_FILE = "queries.txt"
+    QUERIES_FILE = "requests/queries.txt"
 
     pipeline = Neo4jPipeline(NEO4J_URI, NEO4J_USER, NEO4J_PASSWORD)
     try:
         responses = pipeline.execute_queries_from_file(QUERIES_FILE)
         for response in responses:
-            print(response.json(indent=2))
+            print(response.model_dump_json(indent=2))
     finally:
         pipeline.close()

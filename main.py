@@ -1,10 +1,9 @@
 """Test module."""
 
-import os
 import json
+from langchain_ollama import ChatOllama
 import libs.graph_management as g
 import libs.pipelines as p
-from langchain_ollama import ChatOllama
 
 model = ChatOllama(model="llama3.2")
 
@@ -17,7 +16,7 @@ def run_pipeline_one():
     print(len(encoded_graph))
     i=0
     with open('results/llm_results_one.txt', 'w') as file:
-            file.write('')
+        file.write('')
     for q in queries:
         i+=1
         print(f"request {i}:")
@@ -34,7 +33,7 @@ def run_pipeline_two():
         data = json.load(file)
     i=0
     with open('results/llm_results_two.txt', 'w') as file:
-            file.write('')
+        file.write('')
     for q in queries:
         i+=1
         print(f"request {i}:")
@@ -52,7 +51,7 @@ def run_pipeline_three():
     print(len(encoded_graph))
     i=0
     with open('results/llm_results_three.txt', 'w') as file:
-            file.write('')
+        file.write('')
     for q in queries:
         i+=1
         print(f"request {i}:")
