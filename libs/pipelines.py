@@ -59,11 +59,11 @@ def pipeline_pydantic(graph, format_graph, query):
 
         if response is None:
             print("Model invocation returned None. Check the model setup or input prompt.")
-            return
+            return response
 
         if not hasattr(response, 'content'):
             print("Response object does not have a 'content' attribute.")
-            return
+            return response
 
         parsed_response = parser.parse(response.content)
         print("Parsed response:", parsed_response)
@@ -71,6 +71,7 @@ def pipeline_pydantic(graph, format_graph, query):
 
     except Exception as e:
         print(f"Error during model invocation or response parsing: {e}")
+        return response
 
 
 def pipeline_NL_to_query(graph, format_graph, query):
@@ -132,11 +133,11 @@ def pipeline_NL_to_res(graph, format_graph, query):
 
         if response is None:
             print("Model invocation returned None. Check the model setup or input prompt.")
-            return
+            return response
 
         if not hasattr(response, 'content'):
             print("Response object does not have a 'content' attribute.")
-            return
+            return response
 
         parsed_response = parser.parse(response.content)
         print("Parsed response:", parsed_response)
@@ -144,3 +145,4 @@ def pipeline_NL_to_res(graph, format_graph, query):
 
     except Exception as e:
         print(f"Error during model invocation or response parsing: {e}")
+        return response

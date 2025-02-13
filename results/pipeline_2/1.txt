@@ -1,0 +1,38 @@
+MATCH (n) RETURN DISTINCT TYPE(n)
+---
+MATCH (n) RETURN n.relationship_type
+---
+MATCH (n:Node)
+RETURN n.StartLabels, n.EndLabels, n.RelationshipType
+---
+MATCH (n) RETURN n.StartLabels, n.EndLabels, n.RelationshipType
+---
+MATCH p=shortestPath((n:Person)-[*]-(m))
+RETURN p, TYPE(n), TYPE(m)
+---
+MATCH (m:Match)-[:PLAYED_IN]->(p:Person), (m)-[:SCORED_GOAL]->()
+RETURN m, p
+---
+MATCH (t:Team)-[:PARTICIPATED_IN]->(tourn:Tournament)
+RETURN t.name, tourn.name
+---
+MATCH (p:Person)-[:SCORED_GOAL]->(m1:Match), (p)-[:SCORED_GOAL]->(m2:Match)
+WHERE m1 <> m2
+RETURN p.name
+---
+MATCH (t:Team)-[:PARTICIPATED_IN]->(m:Tournament)
+RETURN t.name
+---
+MATCH (t:Tournament)-[:FOR*1..2]-(s:Squad)<-[:IN_SQUAD|COACH_FOR]-(:Person)-[r:REPRESENTS|SCORED_GOAL]-(t2:Team)
+RETURN t.name AS Tournament, COLLECT(DISTINCT t2.name) AS Teams, COLLECT(DISTINCT r.target) AS Players
+---
+MATCH (t:Team)-[:REPRESENTS]->(p:Person)
+RETURN t.name, COUNT(p) AS player_count
+---
+MATCH t:Team
+OPTIONAL MATCH (t]->(m:Match))
+WHERE m <> ()
+WITH collect(distinct(t)) AS teams, count(*) as total_matches, sum(m SCORED_GOAL) as total_goals
+ORDER BY total_matches DESC
+RETURN teams, avg(total_goals / total_matches) as avg_goals_per_match
+---

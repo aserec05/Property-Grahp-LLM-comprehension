@@ -1,0 +1,46 @@
+MATCH (n:Node)
+WHERE NOT EXISTS ((n)-[:*]->())
+RETURN n.type AS nodeType
+---
+MATCH (n) RETURN n.RelationshipType, COUNT(DISTINCT n.RelationshipType) AS count GROUP BY n.RelationshipType ORDER BY count DESC LIMIT 1
+---
+MATCH (n)
+RETURN n StartLabels, n EndLabels
+---
+MATCH (n:Entity)
+WHERE NOT n.Label IN ["StartLabels", "EndLabels"]
+RETURN n.Label, n.Properties
+---
+MATCH (n1:Person)-[r]->(n2), (m:Match)-[r]->(n3)
+WHERE n2 IS NULL AND n3 IS NOT NULL
+RETURN 'Person' + '->' + type(n3) AS from_node, 
+       type(n1) + '<--' + type(n3) AS to_node
+---
+MATCH (m:Match)-[:PLAYED_IN]->(p:Person)-[:SCORED_GOAL]->()
+RETURN m, p
+---
+MATCH (t:Tournament)-[:FOR]->(s:Squad)-[:IN_SQUAD]->(p:Person)
+RETURN t.name, count(DISTINCT s) as num_teams
+---
+MATCH (p:Person)-[r1:SCORED_GOAL]->(m1:Match), (p)-[r2:SCORED_GOAL]->(m2:Match)
+WHERE r1 <> r2
+RETURN p.name AS Player, COUNT(*) AS Goals
+---
+MATCH (t:Team)-[r:PARTICIPATED_IN]-(tm:Tournament)
+RETURN t.name, tm.name
+---
+MATCH (t:Team)-[:NAMED]->(s:Squad), (s)-[r:FOR]-(m:Tournament)
+MATCH (p:Person)-[*]-()
+RETURN t.name AS Team, m.name AS Tournament, r.relationType, p.name AS Player
+---
+MATCH (team:Team)
+MATCH (t:Team {name: team.name})
+OPTIONAL MATCH (r:REPRESENTS {team: t})
+OPTIONAL MATCH (p:Person)
+RETURN team.name, COUNT(DISTINCT p) AS num_players
+---
+MATCH (team:Team)-[:REPRESENTS]->(person:Person)-[:SCORED_GOAL]->(match:Match)
+WHERE NOT team IN match
+WITH team, COUNT(DISTINCT person) AS score_count, AVG(match.scoredGoals) AS avg_goals
+RETURN team.name, avg_goals
+---
