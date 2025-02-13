@@ -1,5 +1,6 @@
 """Test module."""
 
+import os
 import json
 from langchain_ollama import ChatOllama
 import libs.graph_management as g
@@ -72,7 +73,7 @@ def run_pipeline_three(n_run: int):
                 file.write(str(res) + '\n---\n')
 
 if __name__ == "__main__":
-    n_run = 3
+    n_run = 5
     run_pipeline_one(n_run)
     run_pipeline_two(n_run)
     run_pipeline_three(n_run)
