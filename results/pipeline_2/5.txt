@@ -1,0 +1,48 @@
+MATCH (n) RETURN DISTINCT TYPE(n)
+---
+MATCH (n:Node) WHERE NOT n.StartLabels AND NOT n.EndLabels RETURN n.RelationshipType
+---
+MATCH (n:Node)
+WHERE NOT n:Person
+RETURN n.StartLabels, n.EndLabels
+---
+MATCH (n:Person) 
+OPTIONAL MATCH (m:Person {id:n.id}) 
+RETURN n.StartLabels, m.EndLabels, n.EndLabels, m.StartLabels 
+
+OR 
+
+MATCH (n:Person) 
+OPTIONAL MATCH (m:Squad {id:n.id}) 
+RETURN n.StartLabels, m.EndLabels, n.EndLabels, m.StartLabels
+---
+MATCH p = (n1:Person)-[r]->(n2)
+WHERE n1 <> n2
+RETURN n1.type AS StartType, n2.type AS EndType, r.relationType
+---
+MATCH (p:Person)-[:SCORED_GOAL]->(m:Match)
+RETURN m, p
+---
+MATCH (t:Team)-[:PARTICIPATED_IN]->(m:Tournament)
+RETURN t.name, m.name
+---
+MATCH (p:Person)-[:SCORED_GOAL]->(m:Match)
+RETURN p, COUNT(m) AS score_count
+WHERE score_count > 1
+---
+MATCH (t:Team)-[:PARTICIPATED_IN]->(m:Tournament)
+RETURN t.name, m.name
+---
+MATCH (t:Team)-[r1:NAMED]->(s:Squad), (s)-[r2:FOR]-(t2:Tournament)
+OR MATCH (m:Match)<-[r3:PLAYED_IN]-(:Person)-[r4:REPRESENTS]-(t:Team),
+    (m)-[r5:SCORED_GOAL]->(:Person)-[r6:IN_SQUAD]-(s:Squad),
+    (s)-[r7:FOR]-(t2:Tournament)
+RETURN t, r1.label AS NamedForT, t2, r2.label AS ForT, m, r3.label AS PlayedInM, t, r5.label AS ScoredGoalByT
+---
+MATCH (t:Team)-[]-(e:Person)-[]-(te:Team)
+WHERE t <> e AND t <> te
+RETURN t, COUNT(e) AS num_players
+---
+MATCH (t:Team)-[:REPRESENTS]->(p:Person)-[r:SCORED_GOAL]-[:PLAYED_IN]->(m:Match)
+RETURN t.name, avg(size((p)-[:SCORED_GOAL]-(m))) AS average_goals
+---

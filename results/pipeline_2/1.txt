@@ -1,38 +1,44 @@
 MATCH (n) RETURN DISTINCT TYPE(n)
 ---
-MATCH (n) RETURN n.relationship_type
----
-MATCH (n:Node)
-RETURN n.StartLabels, n.EndLabels, n.RelationshipType
+MATCH (n) RETURN n.relationshipType
 ---
 MATCH (n) RETURN n.StartLabels, n.EndLabels, n.RelationshipType
 ---
-MATCH p=shortestPath((n:Person)-[*]-(m))
-RETURN p, TYPE(n), TYPE(m)
+MATCH (n:Person | Squad | Team | Match | Tournament)
+OPTIONAL MATCH (p:Person | Squad | Team | Match | Tournament)
+WHERE n<-[:COACH_FOR] OR n<-[:IN_SQUAD]> OR n<-[:REPRESENTS]> OR n<-[:SCORED_GOAL]> OR p<-[:PLAYED_IN]> OR p<-[:FOR]> OR p<-[:NAMED> OR p<-[:PARTICIPATED_IN]>
+RETURN TYPE(n), TYPE(p), n.StartLabels, p.StartLabels
 ---
-MATCH (m:Match)-[:PLAYED_IN]->(p:Person), (m)-[:SCORED_GOAL]->()
-RETURN m, p
+MATCH (n:Node {label: 'Person'})-[*]-()
+
+OR MATCH (n:Node {label: 'Squad'})-[*]-()
+OR MATCH (n:Node {label: 'Team'})-[*]-()
+OR MATCH (n:Node {label: 'Tournament'})-[*]-()
 ---
-MATCH (t:Team)-[:PARTICIPATED_IN]->(tourn:Tournament)
+MATCH (p:Person)-[:SCORED_GOAL]->(m:Match), (m)-[:PLAYED_IN]->(t:Tournament)
+RETURN p.name AS Player, m.name AS Match
+---
+MATCH (t:Team)-[:PARTICIPATED_IN]->(tourn: Tournament)
 RETURN t.name, tourn.name
 ---
-MATCH (p:Person)-[:SCORED_GOAL]->(m1:Match), (p)-[:SCORED_GOAL]->(m2:Match)
-WHERE m1 <> m2
-RETURN p.name
+MATCH (p:Person)-[:SCORED_GOAL]->(m:Match)
+WHERE size(collect(m)) >= 2
+RETURN p
 ---
-MATCH (t:Team)-[:PARTICIPATED_IN]->(m:Tournament)
-RETURN t.name
+MATCH (t1:Team)-[:PARTICIPATED_IN]->(t2:Team)
+WHERE t1 <> t2
+RETURN t1, t2
 ---
-MATCH (t:Tournament)-[:FOR*1..2]-(s:Squad)<-[:IN_SQUAD|COACH_FOR]-(:Person)-[r:REPRESENTS|SCORED_GOAL]-(t2:Team)
-RETURN t.name AS Tournament, COLLECT(DISTINCT t2.name) AS Teams, COLLECT(DISTINCT r.target) AS Players
----
-MATCH (t:Team)-[:REPRESENTS]->(p:Person)
-RETURN t.name, COUNT(p) AS player_count
+MATCH (t:Team)-[:NAMED]->(s:Squad), (s)-[r:FOR]->(m:Tournament)
+RETURN t.name, m.name, s.name
 ---
 MATCH t:Team
-OPTIONAL MATCH (t]->(m:Match))
-WHERE m <> ()
-WITH collect(distinct(t)) AS teams, count(*) as total_matches, sum(m SCORED_GOAL) as total_goals
-ORDER BY total_matches DESC
-RETURN teams, avg(total_goals / total_matches) as avg_goals_per_match
+WITH t, COLLECT(DISTINCT t.REPRESENTS) AS represents
+UNWIND represents AS r
+OPTIONAL MATCH (t:Team {name: r}) RETURN t.name, COUNT(*)
+---
+MATCH (t:Team)-[:REPRESENTS]->(p:Person)-[:SCORED_GOAL]->(m:Match)
+WHERE t.name IN (distinct(p.represented_team)))
+GROUP m BY p.represented_team
+AGGREGATE(COUNT(m) AS goalsScored) / COUNT(DISTINCT m) AS avgGoalsScored
 ---

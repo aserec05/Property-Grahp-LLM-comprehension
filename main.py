@@ -62,18 +62,18 @@ def run_pipeline_three(n_run: int):
     path = 'results/pipeline_3/'
     for j in range(n_run):
         i=0
-        with open(path+str(j+1)+'.txt', 'w') as file:
+        with open(path+str(j+5)+'.txt', 'w') as file:
                 file.write('')
         for q in queries:
             i+=1
             print(f"request {i}:") 
             res = p.pipeline_NL_to_res(encoded_graph, "Incident", q)
             print("-------------------")
-            with open(path+str(j+1)+'.txt', 'a') as file:
+            with open(path+str(j+5)+'.txt', 'a') as file:
                 file.write(str(res) + '\n---\n')
 
 if __name__ == "__main__":
-    n_run = 5
-    run_pipeline_one(n_run)
-    run_pipeline_two(n_run)
+    n_run = 1
+    #run_pipeline_one(n_run)
+    #run_pipeline_two(n_run)
     run_pipeline_three(n_run)
