@@ -1,8 +1,8 @@
 MATCH (n) RETURN DISTINCT labels(n) AS NodeLabels
-MATCH (p:Person)-[:SCORED_GOAL]->(m:Match) RETURN m, collect(p) AS Players
+MATCH ()-[r]->() RETURN DISTINCT type(r) AS RelationshipTypes
 MATCH (n) RETURN DISTINCT labels(n) AS NodeLabels, keys(n) AS Properties
 MATCH ()-[r]->() RETURN DISTINCT type(r) AS RelationshipTypes, keys(r) AS Properties
-MATCH (n)-[r]->(m) RETURN labels(n) AS StartLabels, type(r) AS RelationshipType, labels(m) AS EndLabels
+MATCH (n)-[r]->(m) RETURN DISTINCT labels(n) AS StartLabels, type(r) AS RelationshipType, labels(m) AS EndLabels
 MATCH (p:Person)-[:SCORED_GOAL]->(m:Match) RETURN m, collect(p) AS Players
 MATCH (t:Team)-[:PARTICIPATED_IN]->(tr:Tournament) RETURN t, collect(tr) AS Tournaments
 MATCH (p:Person)-[:SCORED_GOAL]->(m:Match) WITH p, count(m) AS MatchCount WHERE MatchCount >= 2 RETURN p

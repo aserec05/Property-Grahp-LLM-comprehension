@@ -1,0 +1,48 @@
+MATCH (n) RETURN DISTINCT n labels;
+---
+MATCH (n) RETURN DISTINCT n.relationshipType
+---
+MATCH (n) RETURN n.StartLabels, n.EndLabels
+---
+MATCH (n:Person)-[r:COACH_FOR|IN_SQUAD|PLAYED_IN|REPRESENTS|SCORED_GOAL]-(), 
+       (m:Squad)-[r2:FOR|NAMED|PARTICIPATED_IN|PLAYED_IN|IN_TOURNAMENT|COACH_FOR]-()
+WHERE n <> m
+RETURN n.StartLabels, r.RelationshipType, m.EndLabels
+---
+MATCH (n1:Node {StartLabels: [label]})
+MATCH (n2:Node {EndLabels: [label]})
+OPTIONAL MATCH (n1)-[r]->(n2)
+WHERE n1 <> n2
+RETURN r.RelationshipType, type(n1), type(n2)
+---
+MATCH (m:Match)-[:PLAYED_IN {scored_in: true}]->(p:Person)
+RETURN m, p.start_labels[0], p.end_labels[0]
+---
+MATCH (t:Team)-[:PARTICIPATED_IN]->(mt:Tournament)
+RETURN t.name, mt.name
+---
+MATCH (p:Person)-[:SCORED_GOAL]->(m:Match)
+WHERE p.id IN (
+  MATCH (s:Squad)-[:FOR]->(t:Tournament)
+  WHERE t.id IN (
+    MATCH (t2:Tournament)-[:PARTICIPATED_IN]->(m2:Match)
+    WHERE m2.id = m.id
+  )
+) 
+RETURN DISTINCT p
+---
+MATCH (t:Team)-[:PARTICIPATED_IN]->(m:Match)
+RETURN t.teamName, m.tournamentName
+---
+MATCH (t:Team)-[:PARTICIPATED_IN|PLAYED_IN|NAMED]->(m:Match), (p:Person)-[:REPRESENTS|SCORED_GOAL|PLAYED_IN]->(m)
+OPTIONAL MATCH (t)<-[:FOR|IN_SQUAD]-(:Squad)-[s]->(m)
+RETURN t.name AS team_name, collect(p.name) AS players, s.name AS squad_name
+---
+MATCH t:Team
+WITH t, count(DISTINCT t.REPRESENTS) as num_teams
+RETURN t.name, num_teams
+---
+MATCH t:Team
+OPTIONAL MATCH (t)-[:PARTICIPATED_IN]->(m:Match)
+RETURN t.name, AVG(m.scoredGoal) AS avg_goals
+---

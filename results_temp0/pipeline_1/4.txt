@@ -1,0 +1,24 @@
+query='MATCH (n) RETURN DISTINCT labels(n) AS NodeLabels' result=[{'NodeLabels': '[Person, Player]'}, {'NodeLabels': '[Match]'}, {'NodeLabels': '[Team]'}, {'NodeLabels': '[Game]'}]
+---
+query='MATCH ()-[r]->() RETURN DISTINCT type(r) AS RelationshipTypes' result=[{'RelationshipTypes': 'SUBBED_ON'}, {'RelationshipTypes': 'STARTED'}, {'RelationshipTypes': 'REPRESENTED_BY'}, {'RelationshipTypes': 'PLAYED_FOR'}, {'RelationshipTypes': 'PLAYED_IN'}, {'RelationshipTypes': 'SUBSTITUTED_IN'}, {'RelationshipTypes': 'WON'}, {'RelationshipTypes': 'REPRESENTS'}, {'RelationshipTypes': 'SUBBED_OFF'}, {'RelationshipTypes': 'SUBSED_ON'}]
+---
+query='MATCH (n) RETURN DISTINCT labels(n) AS NodeLabels, keys(n) AS Properties' result=[{'NodeLabels': '[Person, Player]', 'Properties': ['dob', 'name', 'id']}, {'NodeLabels': '[Team]', 'Properties': ['name', 'id']}, {'NodeLabels': '[Match]', 'Properties': ['date', 'stage', 'id']}, {'NodeLabels': '[Game]', 'Properties': ['date', 'stage', 'id']}, {'NodeLabels': '[Person]', 'Properties': ['dob', 'name', 'id']}, {'NodeLabels': '[]', 'Properties': []}, {'NodeLabels': '[]', 'Properties': []}]
+---
+query='MATCH ()-[r]->() RETURN DISTINCT type(r) AS RelationshipTypes, keys(r) AS Properties' result=[{'RelationshipTypes': 'REPRESENTED_BY', 'Properties': ['13959']}, {'RelationshipTypes': 'PLAYED_FOR', 'Properties': ['5957']}, {'RelationshipTypes': 'PLAYED_IN', 'Properties': ['6188']}, {'RelationshipTypes': 'REPRESENTS', 'Properties': ['13975', '13974', '13973', '13977']}, {'RelationshipTypes': 'PLAYED_IN', 'Properties': ['9181', '9184']}, {'RelationshipTypes': 'WON', 'Properties': ['5683']}, {'RelationshipTypes': 'STARTED', 'Properties': []}, {'RelationshipTypes': 'SUBSTITUTED_IN', 'Properties': ['9040']}, {'RelationshipTypes': 'SUBBED_ON', 'Properties': ['5894']}, {'RelationshipTypes': 'SUBBED_OFF', 'Properties': ['11532', '12462', "66'", "83'"]}]
+---
+query='MATCH (n)-[r]->(m) RETURN DISTINCT labels(n) AS StartLabels, type(r) AS RelationshipType, labels(m) AS EndLabels' result=[{'StartLabels': '[Person]', 'RelationshipType': 'SUBBED_ON', 'EndLabels': '[Team]'}, {'StartLabels': '[Player]', 'RelationshipType': 'PLAYED_IN', 'EndLabels': '[Match]'}, {'StartLabels': '[Person]', 'RelationshipType': 'REPRESENTS', 'EndLabels': '[Team]'}, {'StartLabels': '[Team]', 'RelationshipType': 'PLAYED_IN', 'EndLabels': ''}, {'StartLabels': '[Person]', 'RelationshipType': 'SUBSTITUTED_IN', 'EndLabels': '[Game]'}, {'StartLabels': '[Match]', 'RelationshipType': 'WON', 'EndLabels': ''}, {'StartLabels': '', 'RelationshipType': '', 'EndLabels': ''}]
+---
+query='MATCH (p:Person)-[:SCORED_GOAL]->(m:Match) RETURN m, collect(p) AS Players' result=[]
+---
+query='MATCH (t:Team)-[:PARTICIPATED_IN]->(tr:Tournament) RETURN t, collect(tr) AS Tournaments' result=[{'id': '1882881', 'name': 'Brazil', 'Tournaments': [{'date': '2007-09-23', 'stage': 'Final', 'id': '2272'}, {'date': '2011-07-04', 'stage': 'First Stage', 'id': '2266'}]}]
+---
+query='MATCH (p:Person)-[:SCORED_GOAL]->(m:Match) WITH p, count(m) AS MatchCount WHERE MatchCount >= 2 RETURN p' result=[{'id': '190354', 'name': 'Renata Costa'}, {'id': '36', 'name': 'Tania'}]
+---
+query='MATCH (t1:Team)-[:PARTICIPATED_IN]->(tr:Tournament)<-[:PARTICIPATED_IN]-(t2:Team) RETURN t1, t2' result=[{'id': '1882881', 'name': 'Brazil'}, {'id': '56232'}]
+---
+query='MATCH (p:Person)-[:REPRESENTS]->(t:Team)-[:PARTICIPATED_IN]->(tr:Tournament) RETURN tr, collect(DISTINCT t) AS Teams, collect(DISTINCT p) AS Players' result=[{'2007-09-23': {'Teams': ['Brazil'], 'Players': [45]}}, {'2007-09-21': {'Teams': ['Brazil'], 'Players': [49]}}, {'1995-06-05': {'Teams': ['Brazil'], 'Players': [48]}}, {'1995-06-09': {'Teams': ['Brazil'], 'Players': [48]}}, {'2007-09-12': {'Teams': ['Brazil'], 'Players': [2301]}}, {'2011-07-04': {'Teams': ['Brazil'], 'Players': [2266]}}, {'2011-07-06': {'Teams': ['Brazil'], 'Players': [49, 2268]}}]
+---
+query='MATCH (p:Person)-[:REPRESENTS]->(t:Team) RETURN t, count(p) AS PlayerCount' result=[{'Brazil': 1, 'PlayerCount': 5}]
+---
+query='MATCH (p:Person)-[:SCORED_GOAL]->(m:Match)<-[:PLAYED_IN]-(t:Team) RETURN t, avg(size((p)-[:SCORED_GOAL]->())) AS AvgGoals ORDER BY AvgGoals DESC' result=[{'t': 'Brazil', 'AvgGoals': 0.0}]
+---

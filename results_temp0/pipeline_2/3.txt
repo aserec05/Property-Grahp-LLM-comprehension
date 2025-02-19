@@ -1,0 +1,64 @@
+MATCH (n) RETURN DISTINCT n.label AS label
+---
+MATCH (n:Person)
+OPTIONAL MATCH (m)
+WHERE NOT n IN [m]
+WITH DISTINCT n, m
+RETURN n.StartLabels, m.EndLabels AS relationTypes
+---
+MATCH (n:Person) SET n.person_id = ID(n)
+MATCH (n:Squad) SET n.squad_id = ID(n)
+MATCH (n:Team) SET n.team_id = ID(n)
+MATCH (n:Tournament) SET n.tournament_id = ID(n)
+
+MATCH (p:Person {person_id: 1})-[:REPRESENTS]->(t:Team)
+MATCH (p:Person {person_id: 1})-[:SCORED_GOAL]->(m:Match)
+MATCH (p:Person {person_id: 1})-[:COACH_FOR]->(s:Squad)
+MATCH (p:Person {person_id: 1})-[:IN_SQUAD]->(s:Squad)
+MATCH (p:Person {person_id: 1})-[:PLAYED_IN]->(m:Match)
+
+OPTIONAL MATCH (t:Team {team_id: ID(t)})-[:NAMED]->(s:Squad)
+OPTIONAL MATCH (t:Team {team_id: ID(t)})-[:PARTICIPATED_IN]->(t2:Tournament)
+RETURN p.person_id, t.team_id, s.squad_id, t.tournament_id, m.match_id
+---
+MATCH (n:Label {StartLabels: 'Person'})-[:RELM|-1]-(m)
+WHERE n.StartLabels = 'Person'
+RETURN m.RelationshipType, m.EndLabels
+---
+MATCH p=(n1:Person)-[r]->(n2)
+WHERE n2 IN ['Squad', 'Match', 'Tournament', 'Team']
+RETURN n1.type, type(n2)
+---
+MATCH (m:Match)-[:PLAYED_IN]->(p:Person)-[:SCORED_GOAL]->()
+RETURN m, collect(p) as scorers
+---
+MATCH (t:Team)-[:PARTICIPATED_IN]->(m:Tournament)
+RETURN t.name AS TeamName, m.name AS TournamentName
+---
+MATCH (p:Person)-[:SCORED_GOAL]->(m:Match)
+WHERE p.id IN (
+  MATCH (p:Person)-[:SCORED_GOAL]->(m1:Match) 
+  RETURN m1.id
+  UNION ALL 
+  MATCH (p:Person)-[:SCORED_GOAL]->(m2:Match) 
+  WHERE m1 <> m2 AND m1 <> m 
+)
+RETURN p.name
+---
+MATCH (t1:Team)-[:PARTICIPATED_IN]-(t2:Team)
+WHERE t1 <> t2
+RETURN t1, t2
+---
+MATCH (t:Team)-[:NAMED]->(s:Squad)-[r:FOR]-(t2:Tournament)
+RETURN t.name, s.name, t2.name
+---
+MATCH t:Team
+OPTIONAL MATCH (t<-[:REPRESENTS]-(p:Person))
+WITH COUNT(DISTINCT p) AS player_count
+GROUP BY t
+ORDER BY player_count DESC
+---
+MATCH (t:Team)-[:REPRESENTS]->(p:Person)-[:SCORED_GOAL]->(m:Match)
+WITH t, p, COUNT(m) as score
+RETURN t.name, AVG(score) AS avg_goals
+---

@@ -1,0 +1,51 @@
+MATCH (n) RETURN DISTINCT TYPE(n)
+---
+MATCH (n:Person)
+OPTIONAL MATCH (m:Person {id: n.id})
+WHERE NOT EXISTS (m)-[:COACH_FOR]->()
+WITH collect(DISTINCT n) AS players
+RETURN n.StartLabels + ' -> ' + m.EndLabels AS relationship_type
+---
+MATCH (n:Node)
+RETURN nStartLabel, nEndLabel, nRelationshipType
+---
+MATCH (n:Person | Squad | Team | Tournament | Match) 
+WHERE n:Person OR n:Squad OR n:Team OR n:Tournament OR n:Match
+CALL apoc.graph.query('RETURN type(n), label(n), properties(n)')
+---
+MATCH (n) RETURN n.type, [r RelationshipType for r in n.relations]
+---
+MATCH (p:Person)-[:SCORED_GOAL]->(m:Match)
+RETURN p.name AS player, m.name AS match
+---
+MATCH (t:Team)-[:PARTICIPATED_IN]->(m:Tournament)
+RETURN t.name, m.name
+---
+MATCH (p:Person)-[r1:SCORED_GOAL]->(m:Match)<-[r2:PLAYED_IN]-(s:Squad)
+WHERE r1 <> r2 AND p.id IN [(x).id FOR x IN collect(DISTINCT m.player)] 
+RETURN p.name
+---
+MATCH t1:Team, t2:Team
+OPTIONAL MATCH (t1 <-[r:NAMED]-(s:Squad) <-[r:FOR]- (t2))
+WHERE r.NAMED = 'sameTournament'
+RETURN t1.name AS team1Name, t2.name AS team2Name
+---
+MATCH (t:Tournament)-[:FOR*0..2]->(s:Squad)<-[:IN_SQUAD*1..3]-(p:Person)
+RETURN t.name AS Tournament, s.name AS Squad, p.name AS Player
+---
+MATCH (t:Team)-[r:REPRESENTS]-(p:Person)
+WITH t, COUNT(DISTINCT p) AS num_players
+GROUP BY t
+ORDER BY num_players DESC
+---
+```
+MATCH (t:Team)
+OPTIONAL MATCH (p:Person)-[:REPRESENTS]->(t)
+OPTIONAL MATCH (p)-[:SCORED_GOAL]->()
+WITH t, COLLECT(DISTINCT p) as players
+ORDER BY SIZE(players) DESC
+UNWIND players as player
+WITH t, COUNT(player)<|>player:goals_scored AS goals_scored, AVG(COUNT(player)<|>player):avg_goals
+RETURN t.name, avg_goals
+```
+---

@@ -6,7 +6,7 @@ from langchain_ollama import ChatOllama
 import libs.graph_management as g
 import libs.pipelines as p
 
-model = ChatOllama(model="llama3.2")
+model = ChatOllama(model="llama3.2", temperature=0)
 
 def run_pipeline_one(n_run: int):
     print("--- PIPELINE 1 ---")
@@ -16,11 +16,11 @@ def run_pipeline_one(n_run: int):
         data = json.load(file)
     encoded_graph = g.encode_graph(g.create_graph_for_sub_wc(data))
     #print(len(encoded_graph))
-    path = 'results/pipeline_1/'
+    path = 'results_temp0/pipeline_1/'
+    if not os.path.exists(path):
+            os.makedirs(path)
     for j in range(n_run):
         i=0
-        if not os.path.exists(path):
-            os.makedirs(path)
         with open(path+str(j+1)+'.txt', 'w') as file:
                 file.write('')
         for q in queries:
@@ -38,7 +38,9 @@ def run_pipeline_two(n_run: int):
         queries = file.readlines()
     with open('data/wc_schema.json', 'r',  encoding='utf-8-sig') as file:
         data = json.load(file)
-    path = 'results/pipeline_2/'
+    path = 'results_temp0/pipeline_2/'
+    if not os.path.exists(path):
+            os.makedirs(path)
     for j in range(n_run):
         i=0
         with open(path+str(j+1)+'.txt', 'w') as file:
@@ -59,10 +61,12 @@ def run_pipeline_three(n_run: int):
         data = json.load(file)
     encoded_graph = g.encode_graph(g.create_graph_for_sub_wc(data))
     #print(len(encoded_graph))
-    path = 'results/pipeline_3/'
+    path = 'results_temp0/pipeline_3/'
+    if not os.path.exists(path):
+            os.makedirs(path)
     for j in range(n_run):
         i=0
-        with open(path+str(j+5)+'.txt', 'w') as file:
+        with open(path+str(j+1)+'.txt', 'w') as file:
                 file.write('')
         for q in queries:
             i+=1
@@ -73,7 +77,7 @@ def run_pipeline_three(n_run: int):
                 file.write(str(res) + '\n---\n')
 
 if __name__ == "__main__":
-    n_run = 1
-    #run_pipeline_one(n_run)
-    #run_pipeline_two(n_run)
+    n_run = 5
+    run_pipeline_one(n_run)
+    run_pipeline_two(n_run)
     run_pipeline_three(n_run)

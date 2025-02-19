@@ -1,0 +1,48 @@
+MATCH (n:Node) RETURN DISTINCT n.label AS label
+---
+MATCH (n:Person | n:Squad | n:Tournament | n:Team)
+OPTIONAL MATCH (m)<-[r]-(n)
+RETURN r.RelationshipType
+---
+MATCH (n:Node)
+RETURN n.StartLabels, n.EndLabels
+---
+MATCH (n) RETURN n.StartLabels, n.RelationshipType, n.EndLabels
+---
+MATCH p=()-[r]->()
+WHERE r IN ['IN_TOURNAMENT', 'COACH_FOR', 'IN_SQUAD', 'PLAYED_IN', 'REPRESENTS', 'SCORED_GOAL', 'FOR', 'NAMED', 'PARTICIPATED_IN', 'PLAYED_IN']
+RETURN p.startNode.type AS startType, r as rel, p.endNode.type AS endType
+---
+MATCH (p:Person)-[:SCORED_GOAL]->(m:Match) 
+RETURN p.name, m.match_id
+---
+MATCH (t:Team)-[r:PARTICIPATED_IN]->(mt:Match)
+OPTIONAL MATCH (mt)<-[:FOR]-(s:Squad)
+OPTIONAL MATCH (s)-[rr:NAMED]->(t2:Team)
+WHERE t <> t2
+RETURN t.name AS TeamName, mt.name AS TournamentName
+---
+MATCH (p:Person)-[:SCORED_GOAL]->(m:Match)
+WHERE p <> m
+WITH collect(m.match_id) as matchIds, count(*) AS scoreCount
+WHERE scoreCount > 1
+RETURN p.name, size(matchIds)
+---
+MATCH (t1:Team {name: 'Team A'}), (t2:Team {name: 'Team B'})
+WHERE t1:NAMED - 'Tournament' AND t2:NAMED - 'Tournament'
+WITH collect(t1) AS teamA, collect(t2) AS teamB
+WHERE size(teamA) > 0 AND size(teamB) > 0
+RETURN teamA[0].name, teamB[0].name
+---
+MATCH (t:Team)-[r:PARTICIPATED_IN|NAMED]->(m:Match)<-[r2:PLAYED_IN]->(p:Person)
+WHERE r2.relationType IN ['PARTICIPATED_IN', 'NAMED']
+RETURN t.name, p.name
+---
+MATCH (t:Team)-[:REPRESENTS]->(p:Person)
+WITH t, COUNT(p) AS count
+RETURN t.name, count
+---
+MATCH (t:Team)-[:REPRESENTS]->(p:Person)-[:SCORED_GOAL]->(m:Match)
+WITH t, COUNT(m) AS numMatches, AVG(COUNT(DISTINCT p) AS avgGoals) 
+WHERE t IN [t] ORDER BY avgGoals DESC LIMIT 1
+---
