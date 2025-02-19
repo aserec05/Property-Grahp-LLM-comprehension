@@ -48,25 +48,28 @@ def create_graph_for_good_sub_wc(data):
     """Create a NetworkX graph from JSON data."""
     graph_nx = nx.Graph()
 
-    for item in data:
-        # Define node keys
-        nodes = ["m", "t", "p", "s", "team"]
+    for entry in data:
+        main_node = entry['node']
+        graph_nx.add_node(
+            main_node['identity'],
+            labels=main_node['labels'],
+            **main_node['properties']
+        )
 
-        # Add nodes to the graph
-        for key in nodes:
-            node = item[key]
+        for related_node in entry['relatedNodes']:
             graph_nx.add_node(
-                node["identity"],
-                labels=node.get("labels", []),
-                **node.get("properties", {})
+                related_node['identity'],
+                labels=related_node['labels'],
+                **related_node['properties']
             )
 
-        # Add edges between different entities
-        graph_nx.add_edge(item["m"]["identity"], item["t"]["identity"], relation="PART_OF")
-        graph_nx.add_edge(item["p"]["identity"], item["s"]["identity"], relation="MEMBER_OF")
-        graph_nx.add_edge(item["s"]["identity"], item["team"]["identity"], relation="REPRESENTS")
-        graph_nx.add_edge(item["m"]["identity"], item["team"]["identity"], relation="PLAYED_IN")
-
+        for relationship in entry['relationships']:
+            graph_nx.add_edge(
+                entry['node']['identity'],
+                relationship['relatedNode']['identity'],
+                label=relationship['type'],
+                **relationship['relatedNode']['properties']
+            )
     return graph_nx
 
 def create_node_string(graph):

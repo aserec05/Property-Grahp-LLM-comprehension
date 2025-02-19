@@ -12,7 +12,7 @@ def run_pipeline_one(n_run: int):
     print("--- PIPELINE 1 ---")
     with open('requests/queries.txt', 'r', encoding='utf-8-sig') as file:
         queries = file.readlines()
-    with open('data/sub16_wc.json', 'r',  encoding='utf-8-sig') as file:
+    with open('data/sub_wc.json', 'r',  encoding='utf-8-sig') as file:
         data = json.load(file)
     encoded_graph = g.encode_graph(g.create_graph_for_good_sub_wc(data))
     #print(len(encoded_graph))
@@ -57,7 +57,7 @@ def run_pipeline_three(n_run: int):
     print("--- PIPELINE 3 ---")
     with open('requests/nl_request.txt', 'r', encoding='utf-8-sig') as file:
         queries = file.readlines()
-    with open('data/sub_graph_wc_1.json', 'r',  encoding='utf-8-sig') as file:
+    with open('data/sub_wc.json', 'r',  encoding='utf-8-sig') as file:
         data = json.load(file)
     encoded_graph = g.encode_graph(g.create_graph_for_sub_wc(data))
     #print(len(encoded_graph))
