@@ -44,6 +44,30 @@ def create_graph_for_sub_wc(data):
             )
     return graph_nx
 
+def create_graph_for_good_sub_wc(data):
+    """Create a NetworkX graph from JSON data."""
+    graph_nx = nx.Graph()
+
+    for item in data:
+        # Define node keys
+        nodes = ["m", "t", "p", "s", "team"]
+
+        # Add nodes to the graph
+        for key in nodes:
+            node = item[key]
+            graph_nx.add_node(
+                node["identity"],
+                labels=node.get("labels", []),
+                **node.get("properties", {})
+            )
+
+        # Add edges between different entities
+        graph_nx.add_edge(item["m"]["identity"], item["t"]["identity"], relation="PART_OF")
+        graph_nx.add_edge(item["p"]["identity"], item["s"]["identity"], relation="MEMBER_OF")
+        graph_nx.add_edge(item["s"]["identity"], item["team"]["identity"], relation="REPRESENTS")
+        graph_nx.add_edge(item["m"]["identity"], item["team"]["identity"], relation="PLAYED_IN")
+
+    return graph_nx
 
 def create_node_string(graph):
     """Make nodes for incident encoding"""

@@ -1,0 +1,3002 @@
+﻿[
+  {
+    "m": {
+      "identity": 2202,
+      "labels": [
+        "Match"
+      ],
+      "properties": {
+        "date": "1995-06-05",
+        "stage": "Group Matches",
+        "id": "21903"
+      },
+      "elementId": "4:a43fed98-3122-4458-aca8-b4ef4ccc250c:2202"
+    },
+    "t": {
+      "identity": 4,
+      "labels": [
+        "Tournament"
+      ],
+      "properties": {
+        "year": 1995,
+        "name": "Sweden 1995",
+        "id": "4654",
+        "shortName": "sweden1995"
+      },
+      "elementId": "4:a43fed98-3122-4458-aca8-b4ef4ccc250c:4"
+    },
+    "p": {
+      "identity": 90,
+      "labels": [
+        "Person"
+      ],
+      "properties": {
+        "dob": "1964-05-02",
+        "name": "Neid Silvia",
+        "id": "2150"
+      },
+      "elementId": "4:a43fed98-3122-4458-aca8-b4ef4ccc250c:90"
+    },
+    "s": {
+      "identity": 1483,
+      "labels": [
+        "Squad"
+      ],
+      "properties": {
+        "id": "Germany in 2015"
+      },
+      "elementId": "4:a43fed98-3122-4458-aca8-b4ef4ccc250c:1483"
+    },
+    "team": {
+      "identity": 15,
+      "labels": [
+        "Team"
+      ],
+      "properties": {
+        "name": "Germany",
+        "id": "1882879"
+      },
+      "elementId": "4:a43fed98-3122-4458-aca8-b4ef4ccc250c:15"
+    }
+  },
+  {
+    "m": {
+      "identity": 2202,
+      "labels": [
+        "Match"
+      ],
+      "properties": {
+        "date": "1995-06-05",
+        "stage": "Group Matches",
+        "id": "21903"
+      },
+      "elementId": "4:a43fed98-3122-4458-aca8-b4ef4ccc250c:2202"
+    },
+    "t": {
+      "identity": 4,
+      "labels": [
+        "Tournament"
+      ],
+      "properties": {
+        "year": 1995,
+        "name": "Sweden 1995",
+        "id": "4654",
+        "shortName": "sweden1995"
+      },
+      "elementId": "4:a43fed98-3122-4458-aca8-b4ef4ccc250c:4"
+    },
+    "p": {
+      "identity": 90,
+      "labels": [
+        "Person"
+      ],
+      "properties": {
+        "dob": "1964-05-02",
+        "name": "Neid Silvia",
+        "id": "2150"
+      },
+      "elementId": "4:a43fed98-3122-4458-aca8-b4ef4ccc250c:90"
+    },
+    "s": {
+      "identity": 915,
+      "labels": [
+        "Squad"
+      ],
+      "properties": {
+        "id": "Germany in 2011"
+      },
+      "elementId": "4:a43fed98-3122-4458-aca8-b4ef4ccc250c:915"
+    },
+    "team": {
+      "identity": 15,
+      "labels": [
+        "Team"
+      ],
+      "properties": {
+        "name": "Germany",
+        "id": "1882879"
+      },
+      "elementId": "4:a43fed98-3122-4458-aca8-b4ef4ccc250c:15"
+    }
+  },
+  {
+    "m": {
+      "identity": 2202,
+      "labels": [
+        "Match"
+      ],
+      "properties": {
+        "date": "1995-06-05",
+        "stage": "Group Matches",
+        "id": "21903"
+      },
+      "elementId": "4:a43fed98-3122-4458-aca8-b4ef4ccc250c:2202"
+    },
+    "t": {
+      "identity": 4,
+      "labels": [
+        "Tournament"
+      ],
+      "properties": {
+        "year": 1995,
+        "name": "Sweden 1995",
+        "id": "4654",
+        "shortName": "sweden1995"
+      },
+      "elementId": "4:a43fed98-3122-4458-aca8-b4ef4ccc250c:4"
+    },
+    "p": {
+      "identity": 90,
+      "labels": [
+        "Person"
+      ],
+      "properties": {
+        "dob": "1964-05-02",
+        "name": "Neid Silvia",
+        "id": "2150"
+      },
+      "elementId": "4:a43fed98-3122-4458-aca8-b4ef4ccc250c:90"
+    },
+    "s": {
+      "identity": 66,
+      "labels": [
+        "Squad"
+      ],
+      "properties": {
+        "id": "Germany in 2007"
+      },
+      "elementId": "4:a43fed98-3122-4458-aca8-b4ef4ccc250c:66"
+    },
+    "team": {
+      "identity": 15,
+      "labels": [
+        "Team"
+      ],
+      "properties": {
+        "name": "Germany",
+        "id": "1882879"
+      },
+      "elementId": "4:a43fed98-3122-4458-aca8-b4ef4ccc250c:15"
+    }
+  },
+  {
+    "m": {
+      "identity": 2202,
+      "labels": [
+        "Match"
+      ],
+      "properties": {
+        "date": "1995-06-05",
+        "stage": "Group Matches",
+        "id": "21903"
+      },
+      "elementId": "4:a43fed98-3122-4458-aca8-b4ef4ccc250c:2202"
+    },
+    "t": {
+      "identity": 4,
+      "labels": [
+        "Tournament"
+      ],
+      "properties": {
+        "year": 1995,
+        "name": "Sweden 1995",
+        "id": "4654",
+        "shortName": "sweden1995"
+      },
+      "elementId": "4:a43fed98-3122-4458-aca8-b4ef4ccc250c:4"
+    },
+    "p": {
+      "identity": 366,
+      "labels": [
+        "Person"
+      ],
+      "properties": {
+        "dob": "1966-12-08",
+        "name": "Powell Hope",
+        "id": "426"
+      },
+      "elementId": "4:a43fed98-3122-4458-aca8-b4ef4ccc250c:366"
+    },
+    "s": {
+      "identity": 1036,
+      "labels": [
+        "Squad"
+      ],
+      "properties": {
+        "id": "England in 2011"
+      },
+      "elementId": "4:a43fed98-3122-4458-aca8-b4ef4ccc250c:1036"
+    },
+    "team": {
+      "identity": 13,
+      "labels": [
+        "Team"
+      ],
+      "properties": {
+        "name": "England",
+        "id": "1883720"
+      },
+      "elementId": "4:a43fed98-3122-4458-aca8-b4ef4ccc250c:13"
+    }
+  },
+  {
+    "m": {
+      "identity": 2202,
+      "labels": [
+        "Match"
+      ],
+      "properties": {
+        "date": "1995-06-05",
+        "stage": "Group Matches",
+        "id": "21903"
+      },
+      "elementId": "4:a43fed98-3122-4458-aca8-b4ef4ccc250c:2202"
+    },
+    "t": {
+      "identity": 4,
+      "labels": [
+        "Tournament"
+      ],
+      "properties": {
+        "year": 1995,
+        "name": "Sweden 1995",
+        "id": "4654",
+        "shortName": "sweden1995"
+      },
+      "elementId": "4:a43fed98-3122-4458-aca8-b4ef4ccc250c:4"
+    },
+    "p": {
+      "identity": 366,
+      "labels": [
+        "Person"
+      ],
+      "properties": {
+        "dob": "1966-12-08",
+        "name": "Powell Hope",
+        "id": "426"
+      },
+      "elementId": "4:a43fed98-3122-4458-aca8-b4ef4ccc250c:366"
+    },
+    "s": {
+      "identity": 342,
+      "labels": [
+        "Squad"
+      ],
+      "properties": {
+        "id": "England in 2007"
+      },
+      "elementId": "4:a43fed98-3122-4458-aca8-b4ef4ccc250c:342"
+    },
+    "team": {
+      "identity": 13,
+      "labels": [
+        "Team"
+      ],
+      "properties": {
+        "name": "England",
+        "id": "1883720"
+      },
+      "elementId": "4:a43fed98-3122-4458-aca8-b4ef4ccc250c:13"
+    }
+  },
+  {
+    "m": {
+      "identity": 2202,
+      "labels": [
+        "Match"
+      ],
+      "properties": {
+        "date": "1995-06-05",
+        "stage": "Group Matches",
+        "id": "21903"
+      },
+      "elementId": "4:a43fed98-3122-4458-aca8-b4ef4ccc250c:2202"
+    },
+    "t": {
+      "identity": 4,
+      "labels": [
+        "Tournament"
+      ],
+      "properties": {
+        "year": 1995,
+        "name": "Sweden 1995",
+        "id": "4654",
+        "shortName": "sweden1995"
+      },
+      "elementId": "4:a43fed98-3122-4458-aca8-b4ef4ccc250c:4"
+    },
+    "p": {
+      "identity": 453,
+      "labels": [
+        "Person"
+      ],
+      "properties": {
+        "dob": "1967-12-22",
+        "name": "Martina Voss-Tecklenburg",
+        "id": "110"
+      },
+      "elementId": "4:a43fed98-3122-4458-aca8-b4ef4ccc250c:453"
+    },
+    "s": {
+      "identity": 1805,
+      "labels": [
+        "Squad"
+      ],
+      "properties": {
+        "id": "Switzerland in 2015"
+      },
+      "elementId": "4:a43fed98-3122-4458-aca8-b4ef4ccc250c:1805"
+    },
+    "team": {
+      "identity": 15,
+      "labels": [
+        "Team"
+      ],
+      "properties": {
+        "name": "Germany",
+        "id": "1882879"
+      },
+      "elementId": "4:a43fed98-3122-4458-aca8-b4ef4ccc250c:15"
+    }
+  },
+  {
+    "m": {
+      "identity": 2202,
+      "labels": [
+        "Match"
+      ],
+      "properties": {
+        "date": "1995-06-05",
+        "stage": "Group Matches",
+        "id": "21903"
+      },
+      "elementId": "4:a43fed98-3122-4458-aca8-b4ef4ccc250c:2202"
+    },
+    "t": {
+      "identity": 4,
+      "labels": [
+        "Tournament"
+      ],
+      "properties": {
+        "year": 1995,
+        "name": "Sweden 1995",
+        "id": "4654",
+        "shortName": "sweden1995"
+      },
+      "elementId": "4:a43fed98-3122-4458-aca8-b4ef4ccc250c:4"
+    },
+    "p": {
+      "identity": 453,
+      "labels": [
+        "Person"
+      ],
+      "properties": {
+        "dob": "1967-12-22",
+        "name": "Martina Voss-Tecklenburg",
+        "id": "110"
+      },
+      "elementId": "4:a43fed98-3122-4458-aca8-b4ef4ccc250c:453"
+    },
+    "s": {
+      "identity": 1914,
+      "labels": [
+        "Squad"
+      ],
+      "properties": {
+        "id": "Germany in 2019"
+      },
+      "elementId": "4:a43fed98-3122-4458-aca8-b4ef4ccc250c:1914"
+    },
+    "team": {
+      "identity": 15,
+      "labels": [
+        "Team"
+      ],
+      "properties": {
+        "name": "Germany",
+        "id": "1882879"
+      },
+      "elementId": "4:a43fed98-3122-4458-aca8-b4ef4ccc250c:15"
+    }
+  },
+  {
+    "m": {
+      "identity": 2202,
+      "labels": [
+        "Match"
+      ],
+      "properties": {
+        "date": "1995-06-05",
+        "stage": "Group Matches",
+        "id": "21903"
+      },
+      "elementId": "4:a43fed98-3122-4458-aca8-b4ef4ccc250c:2202"
+    },
+    "t": {
+      "identity": 4,
+      "labels": [
+        "Tournament"
+      ],
+      "properties": {
+        "year": 1995,
+        "name": "Sweden 1995",
+        "id": "4654",
+        "shortName": "sweden1995"
+      },
+      "elementId": "4:a43fed98-3122-4458-aca8-b4ef4ccc250c:4"
+    },
+    "p": {
+      "identity": 730,
+      "labels": [
+        "Person"
+      ],
+      "properties": {
+        "dob": "1974-08-04",
+        "name": "Corinne Diacre",
+        "id": "191349"
+      },
+      "elementId": "4:a43fed98-3122-4458-aca8-b4ef4ccc250c:730"
+    },
+    "s": {
+      "identity": 1898,
+      "labels": [
+        "Squad"
+      ],
+      "properties": {
+        "id": "France in 2019"
+      },
+      "elementId": "4:a43fed98-3122-4458-aca8-b4ef4ccc250c:1898"
+    },
+    "team": {
+      "identity": 14,
+      "labels": [
+        "Team"
+      ],
+      "properties": {
+        "name": "France",
+        "id": "1884761"
+      },
+      "elementId": "4:a43fed98-3122-4458-aca8-b4ef4ccc250c:14"
+    }
+  },
+  {
+    "m": {
+      "identity": 2202,
+      "labels": [
+        "Match"
+      ],
+      "properties": {
+        "date": "1995-06-05",
+        "stage": "Group Matches",
+        "id": "21903"
+      },
+      "elementId": "4:a43fed98-3122-4458-aca8-b4ef4ccc250c:2202"
+    },
+    "t": {
+      "identity": 4,
+      "labels": [
+        "Tournament"
+      ],
+      "properties": {
+        "year": 1995,
+        "name": "Sweden 1995",
+        "id": "4654",
+        "shortName": "sweden1995"
+      },
+      "elementId": "4:a43fed98-3122-4458-aca8-b4ef4ccc250c:4"
+    },
+    "p": {
+      "identity": 864,
+      "labels": [
+        "Person"
+      ],
+      "properties": {
+        "dob": "1964-02-27",
+        "name": "Heinrichs April",
+        "id": "607"
+      },
+      "elementId": "4:a43fed98-3122-4458-aca8-b4ef4ccc250c:864"
+    },
+    "s": {
+      "identity": 858,
+      "labels": [
+        "Squad"
+      ],
+      "properties": {
+        "id": "USA in 2003"
+      },
+      "elementId": "4:a43fed98-3122-4458-aca8-b4ef4ccc250c:858"
+    },
+    "team": {
+      "identity": 20,
+      "labels": [
+        "Team"
+      ],
+      "properties": {
+        "name": "USA",
+        "id": "1882884"
+      },
+      "elementId": "4:a43fed98-3122-4458-aca8-b4ef4ccc250c:20"
+    }
+  },
+  {
+    "m": {
+      "identity": 2202,
+      "labels": [
+        "Match"
+      ],
+      "properties": {
+        "date": "1995-06-05",
+        "stage": "Group Matches",
+        "id": "21903"
+      },
+      "elementId": "4:a43fed98-3122-4458-aca8-b4ef4ccc250c:2202"
+    },
+    "t": {
+      "identity": 4,
+      "labels": [
+        "Tournament"
+      ],
+      "properties": {
+        "year": 1995,
+        "name": "Sweden 1995",
+        "id": "4654",
+        "shortName": "sweden1995"
+      },
+      "elementId": "4:a43fed98-3122-4458-aca8-b4ef4ccc250c:4"
+    },
+    "p": {
+      "identity": 1018,
+      "labels": [
+        "Person"
+      ],
+      "properties": {
+        "dob": "1964-02-05",
+        "name": "Morace Carolina",
+        "id": "468"
+      },
+      "elementId": "4:a43fed98-3122-4458-aca8-b4ef4ccc250c:1018"
+    },
+    "s": {
+      "identity": 1007,
+      "labels": [
+        "Squad"
+      ],
+      "properties": {
+        "id": "Canada in 2011"
+      },
+      "elementId": "4:a43fed98-3122-4458-aca8-b4ef4ccc250c:1007"
+    },
+    "team": {
+      "identity": 28,
+      "labels": [
+        "Team"
+      ],
+      "properties": {
+        "name": "Italy",
+        "id": "1883722"
+      },
+      "elementId": "4:a43fed98-3122-4458-aca8-b4ef4ccc250c:28"
+    }
+  },
+  {
+    "m": {
+      "identity": 2202,
+      "labels": [
+        "Match"
+      ],
+      "properties": {
+        "date": "1995-06-05",
+        "stage": "Group Matches",
+        "id": "21903"
+      },
+      "elementId": "4:a43fed98-3122-4458-aca8-b4ef4ccc250c:2202"
+    },
+    "t": {
+      "identity": 4,
+      "labels": [
+        "Tournament"
+      ],
+      "properties": {
+        "year": 1995,
+        "name": "Sweden 1995",
+        "id": "4654",
+        "shortName": "sweden1995"
+      },
+      "elementId": "4:a43fed98-3122-4458-aca8-b4ef4ccc250c:4"
+    },
+    "p": {
+      "identity": 1059,
+      "labels": [
+        "Person"
+      ],
+      "properties": {
+        "dob": "1973-06-18",
+        "name": "Uche Ngozi",
+        "id": "319382"
+      },
+      "elementId": "4:a43fed98-3122-4458-aca8-b4ef4ccc250c:1059"
+    },
+    "s": {
+      "identity": 1045,
+      "labels": [
+        "Squad"
+      ],
+      "properties": {
+        "id": "Nigeria in 2011"
+      },
+      "elementId": "4:a43fed98-3122-4458-aca8-b4ef4ccc250c:1045"
+    },
+    "team": {
+      "identity": 9,
+      "labels": [
+        "Team"
+      ],
+      "properties": {
+        "name": "Nigeria",
+        "id": "1882893"
+      },
+      "elementId": "4:a43fed98-3122-4458-aca8-b4ef4ccc250c:9"
+    }
+  },
+  {
+    "m": {
+      "identity": 2202,
+      "labels": [
+        "Match"
+      ],
+      "properties": {
+        "date": "1995-06-05",
+        "stage": "Group Matches",
+        "id": "21903"
+      },
+      "elementId": "4:a43fed98-3122-4458-aca8-b4ef4ccc250c:2202"
+    },
+    "t": {
+      "identity": 4,
+      "labels": [
+        "Tournament"
+      ],
+      "properties": {
+        "year": 1995,
+        "name": "Sweden 1995",
+        "id": "4654",
+        "shortName": "sweden1995"
+      },
+      "elementId": "4:a43fed98-3122-4458-aca8-b4ef4ccc250c:4"
+    },
+    "p": {
+      "identity": 1075,
+      "labels": [
+        "Person"
+      ],
+      "properties": {
+        "dob": "1960-02-13",
+        "name": "Sundhage Pia",
+        "id": "576"
+      },
+      "elementId": "4:a43fed98-3122-4458-aca8-b4ef4ccc250c:1075"
+    },
+    "s": {
+      "identity": 1058,
+      "labels": [
+        "Squad"
+      ],
+      "properties": {
+        "id": "USA in 2011"
+      },
+      "elementId": "4:a43fed98-3122-4458-aca8-b4ef4ccc250c:1058"
+    },
+    "team": {
+      "identity": 17,
+      "labels": [
+        "Team"
+      ],
+      "properties": {
+        "name": "Sweden",
+        "id": "1882883"
+      },
+      "elementId": "4:a43fed98-3122-4458-aca8-b4ef4ccc250c:17"
+    }
+  },
+  {
+    "m": {
+      "identity": 2202,
+      "labels": [
+        "Match"
+      ],
+      "properties": {
+        "date": "1995-06-05",
+        "stage": "Group Matches",
+        "id": "21903"
+      },
+      "elementId": "4:a43fed98-3122-4458-aca8-b4ef4ccc250c:2202"
+    },
+    "t": {
+      "identity": 4,
+      "labels": [
+        "Tournament"
+      ],
+      "properties": {
+        "year": 1995,
+        "name": "Sweden 1995",
+        "id": "4654",
+        "shortName": "sweden1995"
+      },
+      "elementId": "4:a43fed98-3122-4458-aca8-b4ef4ccc250c:4"
+    },
+    "p": {
+      "identity": 1075,
+      "labels": [
+        "Person"
+      ],
+      "properties": {
+        "dob": "1960-02-13",
+        "name": "Sundhage Pia",
+        "id": "576"
+      },
+      "elementId": "4:a43fed98-3122-4458-aca8-b4ef4ccc250c:1075"
+    },
+    "s": {
+      "identity": 1575,
+      "labels": [
+        "Squad"
+      ],
+      "properties": {
+        "id": "Sweden in 2015"
+      },
+      "elementId": "4:a43fed98-3122-4458-aca8-b4ef4ccc250c:1575"
+    },
+    "team": {
+      "identity": 17,
+      "labels": [
+        "Team"
+      ],
+      "properties": {
+        "name": "Sweden",
+        "id": "1882883"
+      },
+      "elementId": "4:a43fed98-3122-4458-aca8-b4ef4ccc250c:17"
+    }
+  },
+  {
+    "m": {
+      "identity": 2202,
+      "labels": [
+        "Match"
+      ],
+      "properties": {
+        "date": "1995-06-05",
+        "stage": "Group Matches",
+        "id": "21903"
+      },
+      "elementId": "4:a43fed98-3122-4458-aca8-b4ef4ccc250c:2202"
+    },
+    "t": {
+      "identity": 4,
+      "labels": [
+        "Tournament"
+      ],
+      "properties": {
+        "year": 1995,
+        "name": "Sweden 1995",
+        "id": "4654",
+        "shortName": "sweden1995"
+      },
+      "elementId": "4:a43fed98-3122-4458-aca8-b4ef4ccc250c:4"
+    },
+    "p": {
+      "identity": 1139,
+      "labels": [
+        "Person"
+      ],
+      "properties": {
+        "dob": "1968-04-19",
+        "name": "Asako Takemoto Takakura",
+        "id": "484"
+      },
+      "elementId": "4:a43fed98-3122-4458-aca8-b4ef4ccc250c:1139"
+    },
+    "s": {
+      "identity": 1975,
+      "labels": [
+        "Squad"
+      ],
+      "properties": {
+        "id": "Japan in 2019"
+      },
+      "elementId": "4:a43fed98-3122-4458-aca8-b4ef4ccc250c:1975"
+    },
+    "team": {
+      "identity": 11,
+      "labels": [
+        "Team"
+      ],
+      "properties": {
+        "name": "Japan",
+        "id": "1883723"
+      },
+      "elementId": "4:a43fed98-3122-4458-aca8-b4ef4ccc250c:11"
+    }
+  },
+  {
+    "m": {
+      "identity": 2203,
+      "labels": [
+        "Match"
+      ],
+      "properties": {
+        "date": "1999-06-19",
+        "stage": "Group Matches",
+        "id": "22153"
+      },
+      "elementId": "4:a43fed98-3122-4458-aca8-b4ef4ccc250c:2203"
+    },
+    "t": {
+      "identity": 5,
+      "labels": [
+        "Tournament"
+      ],
+      "properties": {
+        "year": 1999,
+        "name": "USA 1999",
+        "id": "4644",
+        "shortName": "usa1999"
+      },
+      "elementId": "4:a43fed98-3122-4458-aca8-b4ef4ccc250c:5"
+    },
+    "p": {
+      "identity": 90,
+      "labels": [
+        "Person"
+      ],
+      "properties": {
+        "dob": "1964-05-02",
+        "name": "Neid Silvia",
+        "id": "2150"
+      },
+      "elementId": "4:a43fed98-3122-4458-aca8-b4ef4ccc250c:90"
+    },
+    "s": {
+      "identity": 1483,
+      "labels": [
+        "Squad"
+      ],
+      "properties": {
+        "id": "Germany in 2015"
+      },
+      "elementId": "4:a43fed98-3122-4458-aca8-b4ef4ccc250c:1483"
+    },
+    "team": {
+      "identity": 15,
+      "labels": [
+        "Team"
+      ],
+      "properties": {
+        "name": "Germany",
+        "id": "1882879"
+      },
+      "elementId": "4:a43fed98-3122-4458-aca8-b4ef4ccc250c:15"
+    }
+  },
+  {
+    "m": {
+      "identity": 2203,
+      "labels": [
+        "Match"
+      ],
+      "properties": {
+        "date": "1999-06-19",
+        "stage": "Group Matches",
+        "id": "22153"
+      },
+      "elementId": "4:a43fed98-3122-4458-aca8-b4ef4ccc250c:2203"
+    },
+    "t": {
+      "identity": 5,
+      "labels": [
+        "Tournament"
+      ],
+      "properties": {
+        "year": 1999,
+        "name": "USA 1999",
+        "id": "4644",
+        "shortName": "usa1999"
+      },
+      "elementId": "4:a43fed98-3122-4458-aca8-b4ef4ccc250c:5"
+    },
+    "p": {
+      "identity": 90,
+      "labels": [
+        "Person"
+      ],
+      "properties": {
+        "dob": "1964-05-02",
+        "name": "Neid Silvia",
+        "id": "2150"
+      },
+      "elementId": "4:a43fed98-3122-4458-aca8-b4ef4ccc250c:90"
+    },
+    "s": {
+      "identity": 915,
+      "labels": [
+        "Squad"
+      ],
+      "properties": {
+        "id": "Germany in 2011"
+      },
+      "elementId": "4:a43fed98-3122-4458-aca8-b4ef4ccc250c:915"
+    },
+    "team": {
+      "identity": 15,
+      "labels": [
+        "Team"
+      ],
+      "properties": {
+        "name": "Germany",
+        "id": "1882879"
+      },
+      "elementId": "4:a43fed98-3122-4458-aca8-b4ef4ccc250c:15"
+    }
+  },
+  {
+    "m": {
+      "identity": 2203,
+      "labels": [
+        "Match"
+      ],
+      "properties": {
+        "date": "1999-06-19",
+        "stage": "Group Matches",
+        "id": "22153"
+      },
+      "elementId": "4:a43fed98-3122-4458-aca8-b4ef4ccc250c:2203"
+    },
+    "t": {
+      "identity": 5,
+      "labels": [
+        "Tournament"
+      ],
+      "properties": {
+        "year": 1999,
+        "name": "USA 1999",
+        "id": "4644",
+        "shortName": "usa1999"
+      },
+      "elementId": "4:a43fed98-3122-4458-aca8-b4ef4ccc250c:5"
+    },
+    "p": {
+      "identity": 90,
+      "labels": [
+        "Person"
+      ],
+      "properties": {
+        "dob": "1964-05-02",
+        "name": "Neid Silvia",
+        "id": "2150"
+      },
+      "elementId": "4:a43fed98-3122-4458-aca8-b4ef4ccc250c:90"
+    },
+    "s": {
+      "identity": 66,
+      "labels": [
+        "Squad"
+      ],
+      "properties": {
+        "id": "Germany in 2007"
+      },
+      "elementId": "4:a43fed98-3122-4458-aca8-b4ef4ccc250c:66"
+    },
+    "team": {
+      "identity": 15,
+      "labels": [
+        "Team"
+      ],
+      "properties": {
+        "name": "Germany",
+        "id": "1882879"
+      },
+      "elementId": "4:a43fed98-3122-4458-aca8-b4ef4ccc250c:15"
+    }
+  },
+  {
+    "m": {
+      "identity": 2203,
+      "labels": [
+        "Match"
+      ],
+      "properties": {
+        "date": "1999-06-19",
+        "stage": "Group Matches",
+        "id": "22153"
+      },
+      "elementId": "4:a43fed98-3122-4458-aca8-b4ef4ccc250c:2203"
+    },
+    "t": {
+      "identity": 5,
+      "labels": [
+        "Tournament"
+      ],
+      "properties": {
+        "year": 1999,
+        "name": "USA 1999",
+        "id": "4644",
+        "shortName": "usa1999"
+      },
+      "elementId": "4:a43fed98-3122-4458-aca8-b4ef4ccc250c:5"
+    },
+    "p": {
+      "identity": 366,
+      "labels": [
+        "Person"
+      ],
+      "properties": {
+        "dob": "1966-12-08",
+        "name": "Powell Hope",
+        "id": "426"
+      },
+      "elementId": "4:a43fed98-3122-4458-aca8-b4ef4ccc250c:366"
+    },
+    "s": {
+      "identity": 1036,
+      "labels": [
+        "Squad"
+      ],
+      "properties": {
+        "id": "England in 2011"
+      },
+      "elementId": "4:a43fed98-3122-4458-aca8-b4ef4ccc250c:1036"
+    },
+    "team": {
+      "identity": 13,
+      "labels": [
+        "Team"
+      ],
+      "properties": {
+        "name": "England",
+        "id": "1883720"
+      },
+      "elementId": "4:a43fed98-3122-4458-aca8-b4ef4ccc250c:13"
+    }
+  },
+  {
+    "m": {
+      "identity": 2203,
+      "labels": [
+        "Match"
+      ],
+      "properties": {
+        "date": "1999-06-19",
+        "stage": "Group Matches",
+        "id": "22153"
+      },
+      "elementId": "4:a43fed98-3122-4458-aca8-b4ef4ccc250c:2203"
+    },
+    "t": {
+      "identity": 5,
+      "labels": [
+        "Tournament"
+      ],
+      "properties": {
+        "year": 1999,
+        "name": "USA 1999",
+        "id": "4644",
+        "shortName": "usa1999"
+      },
+      "elementId": "4:a43fed98-3122-4458-aca8-b4ef4ccc250c:5"
+    },
+    "p": {
+      "identity": 366,
+      "labels": [
+        "Person"
+      ],
+      "properties": {
+        "dob": "1966-12-08",
+        "name": "Powell Hope",
+        "id": "426"
+      },
+      "elementId": "4:a43fed98-3122-4458-aca8-b4ef4ccc250c:366"
+    },
+    "s": {
+      "identity": 342,
+      "labels": [
+        "Squad"
+      ],
+      "properties": {
+        "id": "England in 2007"
+      },
+      "elementId": "4:a43fed98-3122-4458-aca8-b4ef4ccc250c:342"
+    },
+    "team": {
+      "identity": 13,
+      "labels": [
+        "Team"
+      ],
+      "properties": {
+        "name": "England",
+        "id": "1883720"
+      },
+      "elementId": "4:a43fed98-3122-4458-aca8-b4ef4ccc250c:13"
+    }
+  },
+  {
+    "m": {
+      "identity": 2203,
+      "labels": [
+        "Match"
+      ],
+      "properties": {
+        "date": "1999-06-19",
+        "stage": "Group Matches",
+        "id": "22153"
+      },
+      "elementId": "4:a43fed98-3122-4458-aca8-b4ef4ccc250c:2203"
+    },
+    "t": {
+      "identity": 5,
+      "labels": [
+        "Tournament"
+      ],
+      "properties": {
+        "year": 1999,
+        "name": "USA 1999",
+        "id": "4644",
+        "shortName": "usa1999"
+      },
+      "elementId": "4:a43fed98-3122-4458-aca8-b4ef4ccc250c:5"
+    },
+    "p": {
+      "identity": 453,
+      "labels": [
+        "Person"
+      ],
+      "properties": {
+        "dob": "1967-12-22",
+        "name": "Martina Voss-Tecklenburg",
+        "id": "110"
+      },
+      "elementId": "4:a43fed98-3122-4458-aca8-b4ef4ccc250c:453"
+    },
+    "s": {
+      "identity": 1805,
+      "labels": [
+        "Squad"
+      ],
+      "properties": {
+        "id": "Switzerland in 2015"
+      },
+      "elementId": "4:a43fed98-3122-4458-aca8-b4ef4ccc250c:1805"
+    },
+    "team": {
+      "identity": 15,
+      "labels": [
+        "Team"
+      ],
+      "properties": {
+        "name": "Germany",
+        "id": "1882879"
+      },
+      "elementId": "4:a43fed98-3122-4458-aca8-b4ef4ccc250c:15"
+    }
+  },
+  {
+    "m": {
+      "identity": 2203,
+      "labels": [
+        "Match"
+      ],
+      "properties": {
+        "date": "1999-06-19",
+        "stage": "Group Matches",
+        "id": "22153"
+      },
+      "elementId": "4:a43fed98-3122-4458-aca8-b4ef4ccc250c:2203"
+    },
+    "t": {
+      "identity": 5,
+      "labels": [
+        "Tournament"
+      ],
+      "properties": {
+        "year": 1999,
+        "name": "USA 1999",
+        "id": "4644",
+        "shortName": "usa1999"
+      },
+      "elementId": "4:a43fed98-3122-4458-aca8-b4ef4ccc250c:5"
+    },
+    "p": {
+      "identity": 453,
+      "labels": [
+        "Person"
+      ],
+      "properties": {
+        "dob": "1967-12-22",
+        "name": "Martina Voss-Tecklenburg",
+        "id": "110"
+      },
+      "elementId": "4:a43fed98-3122-4458-aca8-b4ef4ccc250c:453"
+    },
+    "s": {
+      "identity": 1914,
+      "labels": [
+        "Squad"
+      ],
+      "properties": {
+        "id": "Germany in 2019"
+      },
+      "elementId": "4:a43fed98-3122-4458-aca8-b4ef4ccc250c:1914"
+    },
+    "team": {
+      "identity": 15,
+      "labels": [
+        "Team"
+      ],
+      "properties": {
+        "name": "Germany",
+        "id": "1882879"
+      },
+      "elementId": "4:a43fed98-3122-4458-aca8-b4ef4ccc250c:15"
+    }
+  },
+  {
+    "m": {
+      "identity": 2203,
+      "labels": [
+        "Match"
+      ],
+      "properties": {
+        "date": "1999-06-19",
+        "stage": "Group Matches",
+        "id": "22153"
+      },
+      "elementId": "4:a43fed98-3122-4458-aca8-b4ef4ccc250c:2203"
+    },
+    "t": {
+      "identity": 5,
+      "labels": [
+        "Tournament"
+      ],
+      "properties": {
+        "year": 1999,
+        "name": "USA 1999",
+        "id": "4644",
+        "shortName": "usa1999"
+      },
+      "elementId": "4:a43fed98-3122-4458-aca8-b4ef4ccc250c:5"
+    },
+    "p": {
+      "identity": 730,
+      "labels": [
+        "Person"
+      ],
+      "properties": {
+        "dob": "1974-08-04",
+        "name": "Corinne Diacre",
+        "id": "191349"
+      },
+      "elementId": "4:a43fed98-3122-4458-aca8-b4ef4ccc250c:730"
+    },
+    "s": {
+      "identity": 1898,
+      "labels": [
+        "Squad"
+      ],
+      "properties": {
+        "id": "France in 2019"
+      },
+      "elementId": "4:a43fed98-3122-4458-aca8-b4ef4ccc250c:1898"
+    },
+    "team": {
+      "identity": 14,
+      "labels": [
+        "Team"
+      ],
+      "properties": {
+        "name": "France",
+        "id": "1884761"
+      },
+      "elementId": "4:a43fed98-3122-4458-aca8-b4ef4ccc250c:14"
+    }
+  },
+  {
+    "m": {
+      "identity": 2203,
+      "labels": [
+        "Match"
+      ],
+      "properties": {
+        "date": "1999-06-19",
+        "stage": "Group Matches",
+        "id": "22153"
+      },
+      "elementId": "4:a43fed98-3122-4458-aca8-b4ef4ccc250c:2203"
+    },
+    "t": {
+      "identity": 5,
+      "labels": [
+        "Tournament"
+      ],
+      "properties": {
+        "year": 1999,
+        "name": "USA 1999",
+        "id": "4644",
+        "shortName": "usa1999"
+      },
+      "elementId": "4:a43fed98-3122-4458-aca8-b4ef4ccc250c:5"
+    },
+    "p": {
+      "identity": 864,
+      "labels": [
+        "Person"
+      ],
+      "properties": {
+        "dob": "1964-02-27",
+        "name": "Heinrichs April",
+        "id": "607"
+      },
+      "elementId": "4:a43fed98-3122-4458-aca8-b4ef4ccc250c:864"
+    },
+    "s": {
+      "identity": 858,
+      "labels": [
+        "Squad"
+      ],
+      "properties": {
+        "id": "USA in 2003"
+      },
+      "elementId": "4:a43fed98-3122-4458-aca8-b4ef4ccc250c:858"
+    },
+    "team": {
+      "identity": 20,
+      "labels": [
+        "Team"
+      ],
+      "properties": {
+        "name": "USA",
+        "id": "1882884"
+      },
+      "elementId": "4:a43fed98-3122-4458-aca8-b4ef4ccc250c:20"
+    }
+  },
+  {
+    "m": {
+      "identity": 2203,
+      "labels": [
+        "Match"
+      ],
+      "properties": {
+        "date": "1999-06-19",
+        "stage": "Group Matches",
+        "id": "22153"
+      },
+      "elementId": "4:a43fed98-3122-4458-aca8-b4ef4ccc250c:2203"
+    },
+    "t": {
+      "identity": 5,
+      "labels": [
+        "Tournament"
+      ],
+      "properties": {
+        "year": 1999,
+        "name": "USA 1999",
+        "id": "4644",
+        "shortName": "usa1999"
+      },
+      "elementId": "4:a43fed98-3122-4458-aca8-b4ef4ccc250c:5"
+    },
+    "p": {
+      "identity": 1018,
+      "labels": [
+        "Person"
+      ],
+      "properties": {
+        "dob": "1964-02-05",
+        "name": "Morace Carolina",
+        "id": "468"
+      },
+      "elementId": "4:a43fed98-3122-4458-aca8-b4ef4ccc250c:1018"
+    },
+    "s": {
+      "identity": 1007,
+      "labels": [
+        "Squad"
+      ],
+      "properties": {
+        "id": "Canada in 2011"
+      },
+      "elementId": "4:a43fed98-3122-4458-aca8-b4ef4ccc250c:1007"
+    },
+    "team": {
+      "identity": 28,
+      "labels": [
+        "Team"
+      ],
+      "properties": {
+        "name": "Italy",
+        "id": "1883722"
+      },
+      "elementId": "4:a43fed98-3122-4458-aca8-b4ef4ccc250c:28"
+    }
+  },
+  {
+    "m": {
+      "identity": 2203,
+      "labels": [
+        "Match"
+      ],
+      "properties": {
+        "date": "1999-06-19",
+        "stage": "Group Matches",
+        "id": "22153"
+      },
+      "elementId": "4:a43fed98-3122-4458-aca8-b4ef4ccc250c:2203"
+    },
+    "t": {
+      "identity": 5,
+      "labels": [
+        "Tournament"
+      ],
+      "properties": {
+        "year": 1999,
+        "name": "USA 1999",
+        "id": "4644",
+        "shortName": "usa1999"
+      },
+      "elementId": "4:a43fed98-3122-4458-aca8-b4ef4ccc250c:5"
+    },
+    "p": {
+      "identity": 1059,
+      "labels": [
+        "Person"
+      ],
+      "properties": {
+        "dob": "1973-06-18",
+        "name": "Uche Ngozi",
+        "id": "319382"
+      },
+      "elementId": "4:a43fed98-3122-4458-aca8-b4ef4ccc250c:1059"
+    },
+    "s": {
+      "identity": 1045,
+      "labels": [
+        "Squad"
+      ],
+      "properties": {
+        "id": "Nigeria in 2011"
+      },
+      "elementId": "4:a43fed98-3122-4458-aca8-b4ef4ccc250c:1045"
+    },
+    "team": {
+      "identity": 9,
+      "labels": [
+        "Team"
+      ],
+      "properties": {
+        "name": "Nigeria",
+        "id": "1882893"
+      },
+      "elementId": "4:a43fed98-3122-4458-aca8-b4ef4ccc250c:9"
+    }
+  },
+  {
+    "m": {
+      "identity": 2203,
+      "labels": [
+        "Match"
+      ],
+      "properties": {
+        "date": "1999-06-19",
+        "stage": "Group Matches",
+        "id": "22153"
+      },
+      "elementId": "4:a43fed98-3122-4458-aca8-b4ef4ccc250c:2203"
+    },
+    "t": {
+      "identity": 5,
+      "labels": [
+        "Tournament"
+      ],
+      "properties": {
+        "year": 1999,
+        "name": "USA 1999",
+        "id": "4644",
+        "shortName": "usa1999"
+      },
+      "elementId": "4:a43fed98-3122-4458-aca8-b4ef4ccc250c:5"
+    },
+    "p": {
+      "identity": 1075,
+      "labels": [
+        "Person"
+      ],
+      "properties": {
+        "dob": "1960-02-13",
+        "name": "Sundhage Pia",
+        "id": "576"
+      },
+      "elementId": "4:a43fed98-3122-4458-aca8-b4ef4ccc250c:1075"
+    },
+    "s": {
+      "identity": 1058,
+      "labels": [
+        "Squad"
+      ],
+      "properties": {
+        "id": "USA in 2011"
+      },
+      "elementId": "4:a43fed98-3122-4458-aca8-b4ef4ccc250c:1058"
+    },
+    "team": {
+      "identity": 17,
+      "labels": [
+        "Team"
+      ],
+      "properties": {
+        "name": "Sweden",
+        "id": "1882883"
+      },
+      "elementId": "4:a43fed98-3122-4458-aca8-b4ef4ccc250c:17"
+    }
+  },
+  {
+    "m": {
+      "identity": 2203,
+      "labels": [
+        "Match"
+      ],
+      "properties": {
+        "date": "1999-06-19",
+        "stage": "Group Matches",
+        "id": "22153"
+      },
+      "elementId": "4:a43fed98-3122-4458-aca8-b4ef4ccc250c:2203"
+    },
+    "t": {
+      "identity": 5,
+      "labels": [
+        "Tournament"
+      ],
+      "properties": {
+        "year": 1999,
+        "name": "USA 1999",
+        "id": "4644",
+        "shortName": "usa1999"
+      },
+      "elementId": "4:a43fed98-3122-4458-aca8-b4ef4ccc250c:5"
+    },
+    "p": {
+      "identity": 1075,
+      "labels": [
+        "Person"
+      ],
+      "properties": {
+        "dob": "1960-02-13",
+        "name": "Sundhage Pia",
+        "id": "576"
+      },
+      "elementId": "4:a43fed98-3122-4458-aca8-b4ef4ccc250c:1075"
+    },
+    "s": {
+      "identity": 1575,
+      "labels": [
+        "Squad"
+      ],
+      "properties": {
+        "id": "Sweden in 2015"
+      },
+      "elementId": "4:a43fed98-3122-4458-aca8-b4ef4ccc250c:1575"
+    },
+    "team": {
+      "identity": 17,
+      "labels": [
+        "Team"
+      ],
+      "properties": {
+        "name": "Sweden",
+        "id": "1882883"
+      },
+      "elementId": "4:a43fed98-3122-4458-aca8-b4ef4ccc250c:17"
+    }
+  },
+  {
+    "m": {
+      "identity": 2203,
+      "labels": [
+        "Match"
+      ],
+      "properties": {
+        "date": "1999-06-19",
+        "stage": "Group Matches",
+        "id": "22153"
+      },
+      "elementId": "4:a43fed98-3122-4458-aca8-b4ef4ccc250c:2203"
+    },
+    "t": {
+      "identity": 5,
+      "labels": [
+        "Tournament"
+      ],
+      "properties": {
+        "year": 1999,
+        "name": "USA 1999",
+        "id": "4644",
+        "shortName": "usa1999"
+      },
+      "elementId": "4:a43fed98-3122-4458-aca8-b4ef4ccc250c:5"
+    },
+    "p": {
+      "identity": 1139,
+      "labels": [
+        "Person"
+      ],
+      "properties": {
+        "dob": "1968-04-19",
+        "name": "Asako Takemoto Takakura",
+        "id": "484"
+      },
+      "elementId": "4:a43fed98-3122-4458-aca8-b4ef4ccc250c:1139"
+    },
+    "s": {
+      "identity": 1975,
+      "labels": [
+        "Squad"
+      ],
+      "properties": {
+        "id": "Japan in 2019"
+      },
+      "elementId": "4:a43fed98-3122-4458-aca8-b4ef4ccc250c:1975"
+    },
+    "team": {
+      "identity": 11,
+      "labels": [
+        "Team"
+      ],
+      "properties": {
+        "name": "Japan",
+        "id": "1883723"
+      },
+      "elementId": "4:a43fed98-3122-4458-aca8-b4ef4ccc250c:11"
+    }
+  },
+  {
+    "m": {
+      "identity": 2204,
+      "labels": [
+        "Match"
+      ],
+      "properties": {
+        "date": "1991-11-21",
+        "stage": "Group Matches",
+        "id": "22005"
+      },
+      "elementId": "4:a43fed98-3122-4458-aca8-b4ef4ccc250c:2204"
+    },
+    "t": {
+      "identity": 2,
+      "labels": [
+        "Tournament"
+      ],
+      "properties": {
+        "year": 1991,
+        "name": "China PR 1991",
+        "id": "3373",
+        "shortName": "chinapr1991"
+      },
+      "elementId": "4:a43fed98-3122-4458-aca8-b4ef4ccc250c:2"
+    },
+    "p": {
+      "identity": 90,
+      "labels": [
+        "Person"
+      ],
+      "properties": {
+        "dob": "1964-05-02",
+        "name": "Neid Silvia",
+        "id": "2150"
+      },
+      "elementId": "4:a43fed98-3122-4458-aca8-b4ef4ccc250c:90"
+    },
+    "s": {
+      "identity": 1483,
+      "labels": [
+        "Squad"
+      ],
+      "properties": {
+        "id": "Germany in 2015"
+      },
+      "elementId": "4:a43fed98-3122-4458-aca8-b4ef4ccc250c:1483"
+    },
+    "team": {
+      "identity": 15,
+      "labels": [
+        "Team"
+      ],
+      "properties": {
+        "name": "Germany",
+        "id": "1882879"
+      },
+      "elementId": "4:a43fed98-3122-4458-aca8-b4ef4ccc250c:15"
+    }
+  },
+  {
+    "m": {
+      "identity": 2204,
+      "labels": [
+        "Match"
+      ],
+      "properties": {
+        "date": "1991-11-21",
+        "stage": "Group Matches",
+        "id": "22005"
+      },
+      "elementId": "4:a43fed98-3122-4458-aca8-b4ef4ccc250c:2204"
+    },
+    "t": {
+      "identity": 2,
+      "labels": [
+        "Tournament"
+      ],
+      "properties": {
+        "year": 1991,
+        "name": "China PR 1991",
+        "id": "3373",
+        "shortName": "chinapr1991"
+      },
+      "elementId": "4:a43fed98-3122-4458-aca8-b4ef4ccc250c:2"
+    },
+    "p": {
+      "identity": 90,
+      "labels": [
+        "Person"
+      ],
+      "properties": {
+        "dob": "1964-05-02",
+        "name": "Neid Silvia",
+        "id": "2150"
+      },
+      "elementId": "4:a43fed98-3122-4458-aca8-b4ef4ccc250c:90"
+    },
+    "s": {
+      "identity": 915,
+      "labels": [
+        "Squad"
+      ],
+      "properties": {
+        "id": "Germany in 2011"
+      },
+      "elementId": "4:a43fed98-3122-4458-aca8-b4ef4ccc250c:915"
+    },
+    "team": {
+      "identity": 15,
+      "labels": [
+        "Team"
+      ],
+      "properties": {
+        "name": "Germany",
+        "id": "1882879"
+      },
+      "elementId": "4:a43fed98-3122-4458-aca8-b4ef4ccc250c:15"
+    }
+  },
+  {
+    "m": {
+      "identity": 2204,
+      "labels": [
+        "Match"
+      ],
+      "properties": {
+        "date": "1991-11-21",
+        "stage": "Group Matches",
+        "id": "22005"
+      },
+      "elementId": "4:a43fed98-3122-4458-aca8-b4ef4ccc250c:2204"
+    },
+    "t": {
+      "identity": 2,
+      "labels": [
+        "Tournament"
+      ],
+      "properties": {
+        "year": 1991,
+        "name": "China PR 1991",
+        "id": "3373",
+        "shortName": "chinapr1991"
+      },
+      "elementId": "4:a43fed98-3122-4458-aca8-b4ef4ccc250c:2"
+    },
+    "p": {
+      "identity": 90,
+      "labels": [
+        "Person"
+      ],
+      "properties": {
+        "dob": "1964-05-02",
+        "name": "Neid Silvia",
+        "id": "2150"
+      },
+      "elementId": "4:a43fed98-3122-4458-aca8-b4ef4ccc250c:90"
+    },
+    "s": {
+      "identity": 66,
+      "labels": [
+        "Squad"
+      ],
+      "properties": {
+        "id": "Germany in 2007"
+      },
+      "elementId": "4:a43fed98-3122-4458-aca8-b4ef4ccc250c:66"
+    },
+    "team": {
+      "identity": 15,
+      "labels": [
+        "Team"
+      ],
+      "properties": {
+        "name": "Germany",
+        "id": "1882879"
+      },
+      "elementId": "4:a43fed98-3122-4458-aca8-b4ef4ccc250c:15"
+    }
+  },
+  {
+    "m": {
+      "identity": 2204,
+      "labels": [
+        "Match"
+      ],
+      "properties": {
+        "date": "1991-11-21",
+        "stage": "Group Matches",
+        "id": "22005"
+      },
+      "elementId": "4:a43fed98-3122-4458-aca8-b4ef4ccc250c:2204"
+    },
+    "t": {
+      "identity": 2,
+      "labels": [
+        "Tournament"
+      ],
+      "properties": {
+        "year": 1991,
+        "name": "China PR 1991",
+        "id": "3373",
+        "shortName": "chinapr1991"
+      },
+      "elementId": "4:a43fed98-3122-4458-aca8-b4ef4ccc250c:2"
+    },
+    "p": {
+      "identity": 366,
+      "labels": [
+        "Person"
+      ],
+      "properties": {
+        "dob": "1966-12-08",
+        "name": "Powell Hope",
+        "id": "426"
+      },
+      "elementId": "4:a43fed98-3122-4458-aca8-b4ef4ccc250c:366"
+    },
+    "s": {
+      "identity": 1036,
+      "labels": [
+        "Squad"
+      ],
+      "properties": {
+        "id": "England in 2011"
+      },
+      "elementId": "4:a43fed98-3122-4458-aca8-b4ef4ccc250c:1036"
+    },
+    "team": {
+      "identity": 13,
+      "labels": [
+        "Team"
+      ],
+      "properties": {
+        "name": "England",
+        "id": "1883720"
+      },
+      "elementId": "4:a43fed98-3122-4458-aca8-b4ef4ccc250c:13"
+    }
+  },
+  {
+    "m": {
+      "identity": 2204,
+      "labels": [
+        "Match"
+      ],
+      "properties": {
+        "date": "1991-11-21",
+        "stage": "Group Matches",
+        "id": "22005"
+      },
+      "elementId": "4:a43fed98-3122-4458-aca8-b4ef4ccc250c:2204"
+    },
+    "t": {
+      "identity": 2,
+      "labels": [
+        "Tournament"
+      ],
+      "properties": {
+        "year": 1991,
+        "name": "China PR 1991",
+        "id": "3373",
+        "shortName": "chinapr1991"
+      },
+      "elementId": "4:a43fed98-3122-4458-aca8-b4ef4ccc250c:2"
+    },
+    "p": {
+      "identity": 366,
+      "labels": [
+        "Person"
+      ],
+      "properties": {
+        "dob": "1966-12-08",
+        "name": "Powell Hope",
+        "id": "426"
+      },
+      "elementId": "4:a43fed98-3122-4458-aca8-b4ef4ccc250c:366"
+    },
+    "s": {
+      "identity": 342,
+      "labels": [
+        "Squad"
+      ],
+      "properties": {
+        "id": "England in 2007"
+      },
+      "elementId": "4:a43fed98-3122-4458-aca8-b4ef4ccc250c:342"
+    },
+    "team": {
+      "identity": 13,
+      "labels": [
+        "Team"
+      ],
+      "properties": {
+        "name": "England",
+        "id": "1883720"
+      },
+      "elementId": "4:a43fed98-3122-4458-aca8-b4ef4ccc250c:13"
+    }
+  },
+  {
+    "m": {
+      "identity": 2204,
+      "labels": [
+        "Match"
+      ],
+      "properties": {
+        "date": "1991-11-21",
+        "stage": "Group Matches",
+        "id": "22005"
+      },
+      "elementId": "4:a43fed98-3122-4458-aca8-b4ef4ccc250c:2204"
+    },
+    "t": {
+      "identity": 2,
+      "labels": [
+        "Tournament"
+      ],
+      "properties": {
+        "year": 1991,
+        "name": "China PR 1991",
+        "id": "3373",
+        "shortName": "chinapr1991"
+      },
+      "elementId": "4:a43fed98-3122-4458-aca8-b4ef4ccc250c:2"
+    },
+    "p": {
+      "identity": 453,
+      "labels": [
+        "Person"
+      ],
+      "properties": {
+        "dob": "1967-12-22",
+        "name": "Martina Voss-Tecklenburg",
+        "id": "110"
+      },
+      "elementId": "4:a43fed98-3122-4458-aca8-b4ef4ccc250c:453"
+    },
+    "s": {
+      "identity": 1805,
+      "labels": [
+        "Squad"
+      ],
+      "properties": {
+        "id": "Switzerland in 2015"
+      },
+      "elementId": "4:a43fed98-3122-4458-aca8-b4ef4ccc250c:1805"
+    },
+    "team": {
+      "identity": 15,
+      "labels": [
+        "Team"
+      ],
+      "properties": {
+        "name": "Germany",
+        "id": "1882879"
+      },
+      "elementId": "4:a43fed98-3122-4458-aca8-b4ef4ccc250c:15"
+    }
+  },
+  {
+    "m": {
+      "identity": 2204,
+      "labels": [
+        "Match"
+      ],
+      "properties": {
+        "date": "1991-11-21",
+        "stage": "Group Matches",
+        "id": "22005"
+      },
+      "elementId": "4:a43fed98-3122-4458-aca8-b4ef4ccc250c:2204"
+    },
+    "t": {
+      "identity": 2,
+      "labels": [
+        "Tournament"
+      ],
+      "properties": {
+        "year": 1991,
+        "name": "China PR 1991",
+        "id": "3373",
+        "shortName": "chinapr1991"
+      },
+      "elementId": "4:a43fed98-3122-4458-aca8-b4ef4ccc250c:2"
+    },
+    "p": {
+      "identity": 453,
+      "labels": [
+        "Person"
+      ],
+      "properties": {
+        "dob": "1967-12-22",
+        "name": "Martina Voss-Tecklenburg",
+        "id": "110"
+      },
+      "elementId": "4:a43fed98-3122-4458-aca8-b4ef4ccc250c:453"
+    },
+    "s": {
+      "identity": 1914,
+      "labels": [
+        "Squad"
+      ],
+      "properties": {
+        "id": "Germany in 2019"
+      },
+      "elementId": "4:a43fed98-3122-4458-aca8-b4ef4ccc250c:1914"
+    },
+    "team": {
+      "identity": 15,
+      "labels": [
+        "Team"
+      ],
+      "properties": {
+        "name": "Germany",
+        "id": "1882879"
+      },
+      "elementId": "4:a43fed98-3122-4458-aca8-b4ef4ccc250c:15"
+    }
+  },
+  {
+    "m": {
+      "identity": 2204,
+      "labels": [
+        "Match"
+      ],
+      "properties": {
+        "date": "1991-11-21",
+        "stage": "Group Matches",
+        "id": "22005"
+      },
+      "elementId": "4:a43fed98-3122-4458-aca8-b4ef4ccc250c:2204"
+    },
+    "t": {
+      "identity": 2,
+      "labels": [
+        "Tournament"
+      ],
+      "properties": {
+        "year": 1991,
+        "name": "China PR 1991",
+        "id": "3373",
+        "shortName": "chinapr1991"
+      },
+      "elementId": "4:a43fed98-3122-4458-aca8-b4ef4ccc250c:2"
+    },
+    "p": {
+      "identity": 730,
+      "labels": [
+        "Person"
+      ],
+      "properties": {
+        "dob": "1974-08-04",
+        "name": "Corinne Diacre",
+        "id": "191349"
+      },
+      "elementId": "4:a43fed98-3122-4458-aca8-b4ef4ccc250c:730"
+    },
+    "s": {
+      "identity": 1898,
+      "labels": [
+        "Squad"
+      ],
+      "properties": {
+        "id": "France in 2019"
+      },
+      "elementId": "4:a43fed98-3122-4458-aca8-b4ef4ccc250c:1898"
+    },
+    "team": {
+      "identity": 14,
+      "labels": [
+        "Team"
+      ],
+      "properties": {
+        "name": "France",
+        "id": "1884761"
+      },
+      "elementId": "4:a43fed98-3122-4458-aca8-b4ef4ccc250c:14"
+    }
+  },
+  {
+    "m": {
+      "identity": 2204,
+      "labels": [
+        "Match"
+      ],
+      "properties": {
+        "date": "1991-11-21",
+        "stage": "Group Matches",
+        "id": "22005"
+      },
+      "elementId": "4:a43fed98-3122-4458-aca8-b4ef4ccc250c:2204"
+    },
+    "t": {
+      "identity": 2,
+      "labels": [
+        "Tournament"
+      ],
+      "properties": {
+        "year": 1991,
+        "name": "China PR 1991",
+        "id": "3373",
+        "shortName": "chinapr1991"
+      },
+      "elementId": "4:a43fed98-3122-4458-aca8-b4ef4ccc250c:2"
+    },
+    "p": {
+      "identity": 864,
+      "labels": [
+        "Person"
+      ],
+      "properties": {
+        "dob": "1964-02-27",
+        "name": "Heinrichs April",
+        "id": "607"
+      },
+      "elementId": "4:a43fed98-3122-4458-aca8-b4ef4ccc250c:864"
+    },
+    "s": {
+      "identity": 858,
+      "labels": [
+        "Squad"
+      ],
+      "properties": {
+        "id": "USA in 2003"
+      },
+      "elementId": "4:a43fed98-3122-4458-aca8-b4ef4ccc250c:858"
+    },
+    "team": {
+      "identity": 20,
+      "labels": [
+        "Team"
+      ],
+      "properties": {
+        "name": "USA",
+        "id": "1882884"
+      },
+      "elementId": "4:a43fed98-3122-4458-aca8-b4ef4ccc250c:20"
+    }
+  },
+  {
+    "m": {
+      "identity": 2204,
+      "labels": [
+        "Match"
+      ],
+      "properties": {
+        "date": "1991-11-21",
+        "stage": "Group Matches",
+        "id": "22005"
+      },
+      "elementId": "4:a43fed98-3122-4458-aca8-b4ef4ccc250c:2204"
+    },
+    "t": {
+      "identity": 2,
+      "labels": [
+        "Tournament"
+      ],
+      "properties": {
+        "year": 1991,
+        "name": "China PR 1991",
+        "id": "3373",
+        "shortName": "chinapr1991"
+      },
+      "elementId": "4:a43fed98-3122-4458-aca8-b4ef4ccc250c:2"
+    },
+    "p": {
+      "identity": 1018,
+      "labels": [
+        "Person"
+      ],
+      "properties": {
+        "dob": "1964-02-05",
+        "name": "Morace Carolina",
+        "id": "468"
+      },
+      "elementId": "4:a43fed98-3122-4458-aca8-b4ef4ccc250c:1018"
+    },
+    "s": {
+      "identity": 1007,
+      "labels": [
+        "Squad"
+      ],
+      "properties": {
+        "id": "Canada in 2011"
+      },
+      "elementId": "4:a43fed98-3122-4458-aca8-b4ef4ccc250c:1007"
+    },
+    "team": {
+      "identity": 28,
+      "labels": [
+        "Team"
+      ],
+      "properties": {
+        "name": "Italy",
+        "id": "1883722"
+      },
+      "elementId": "4:a43fed98-3122-4458-aca8-b4ef4ccc250c:28"
+    }
+  },
+  {
+    "m": {
+      "identity": 2204,
+      "labels": [
+        "Match"
+      ],
+      "properties": {
+        "date": "1991-11-21",
+        "stage": "Group Matches",
+        "id": "22005"
+      },
+      "elementId": "4:a43fed98-3122-4458-aca8-b4ef4ccc250c:2204"
+    },
+    "t": {
+      "identity": 2,
+      "labels": [
+        "Tournament"
+      ],
+      "properties": {
+        "year": 1991,
+        "name": "China PR 1991",
+        "id": "3373",
+        "shortName": "chinapr1991"
+      },
+      "elementId": "4:a43fed98-3122-4458-aca8-b4ef4ccc250c:2"
+    },
+    "p": {
+      "identity": 1059,
+      "labels": [
+        "Person"
+      ],
+      "properties": {
+        "dob": "1973-06-18",
+        "name": "Uche Ngozi",
+        "id": "319382"
+      },
+      "elementId": "4:a43fed98-3122-4458-aca8-b4ef4ccc250c:1059"
+    },
+    "s": {
+      "identity": 1045,
+      "labels": [
+        "Squad"
+      ],
+      "properties": {
+        "id": "Nigeria in 2011"
+      },
+      "elementId": "4:a43fed98-3122-4458-aca8-b4ef4ccc250c:1045"
+    },
+    "team": {
+      "identity": 9,
+      "labels": [
+        "Team"
+      ],
+      "properties": {
+        "name": "Nigeria",
+        "id": "1882893"
+      },
+      "elementId": "4:a43fed98-3122-4458-aca8-b4ef4ccc250c:9"
+    }
+  },
+  {
+    "m": {
+      "identity": 2204,
+      "labels": [
+        "Match"
+      ],
+      "properties": {
+        "date": "1991-11-21",
+        "stage": "Group Matches",
+        "id": "22005"
+      },
+      "elementId": "4:a43fed98-3122-4458-aca8-b4ef4ccc250c:2204"
+    },
+    "t": {
+      "identity": 2,
+      "labels": [
+        "Tournament"
+      ],
+      "properties": {
+        "year": 1991,
+        "name": "China PR 1991",
+        "id": "3373",
+        "shortName": "chinapr1991"
+      },
+      "elementId": "4:a43fed98-3122-4458-aca8-b4ef4ccc250c:2"
+    },
+    "p": {
+      "identity": 1075,
+      "labels": [
+        "Person"
+      ],
+      "properties": {
+        "dob": "1960-02-13",
+        "name": "Sundhage Pia",
+        "id": "576"
+      },
+      "elementId": "4:a43fed98-3122-4458-aca8-b4ef4ccc250c:1075"
+    },
+    "s": {
+      "identity": 1058,
+      "labels": [
+        "Squad"
+      ],
+      "properties": {
+        "id": "USA in 2011"
+      },
+      "elementId": "4:a43fed98-3122-4458-aca8-b4ef4ccc250c:1058"
+    },
+    "team": {
+      "identity": 17,
+      "labels": [
+        "Team"
+      ],
+      "properties": {
+        "name": "Sweden",
+        "id": "1882883"
+      },
+      "elementId": "4:a43fed98-3122-4458-aca8-b4ef4ccc250c:17"
+    }
+  },
+  {
+    "m": {
+      "identity": 2204,
+      "labels": [
+        "Match"
+      ],
+      "properties": {
+        "date": "1991-11-21",
+        "stage": "Group Matches",
+        "id": "22005"
+      },
+      "elementId": "4:a43fed98-3122-4458-aca8-b4ef4ccc250c:2204"
+    },
+    "t": {
+      "identity": 2,
+      "labels": [
+        "Tournament"
+      ],
+      "properties": {
+        "year": 1991,
+        "name": "China PR 1991",
+        "id": "3373",
+        "shortName": "chinapr1991"
+      },
+      "elementId": "4:a43fed98-3122-4458-aca8-b4ef4ccc250c:2"
+    },
+    "p": {
+      "identity": 1075,
+      "labels": [
+        "Person"
+      ],
+      "properties": {
+        "dob": "1960-02-13",
+        "name": "Sundhage Pia",
+        "id": "576"
+      },
+      "elementId": "4:a43fed98-3122-4458-aca8-b4ef4ccc250c:1075"
+    },
+    "s": {
+      "identity": 1575,
+      "labels": [
+        "Squad"
+      ],
+      "properties": {
+        "id": "Sweden in 2015"
+      },
+      "elementId": "4:a43fed98-3122-4458-aca8-b4ef4ccc250c:1575"
+    },
+    "team": {
+      "identity": 17,
+      "labels": [
+        "Team"
+      ],
+      "properties": {
+        "name": "Sweden",
+        "id": "1882883"
+      },
+      "elementId": "4:a43fed98-3122-4458-aca8-b4ef4ccc250c:17"
+    }
+  },
+  {
+    "m": {
+      "identity": 2204,
+      "labels": [
+        "Match"
+      ],
+      "properties": {
+        "date": "1991-11-21",
+        "stage": "Group Matches",
+        "id": "22005"
+      },
+      "elementId": "4:a43fed98-3122-4458-aca8-b4ef4ccc250c:2204"
+    },
+    "t": {
+      "identity": 2,
+      "labels": [
+        "Tournament"
+      ],
+      "properties": {
+        "year": 1991,
+        "name": "China PR 1991",
+        "id": "3373",
+        "shortName": "chinapr1991"
+      },
+      "elementId": "4:a43fed98-3122-4458-aca8-b4ef4ccc250c:2"
+    },
+    "p": {
+      "identity": 1139,
+      "labels": [
+        "Person"
+      ],
+      "properties": {
+        "dob": "1968-04-19",
+        "name": "Asako Takemoto Takakura",
+        "id": "484"
+      },
+      "elementId": "4:a43fed98-3122-4458-aca8-b4ef4ccc250c:1139"
+    },
+    "s": {
+      "identity": 1975,
+      "labels": [
+        "Squad"
+      ],
+      "properties": {
+        "id": "Japan in 2019"
+      },
+      "elementId": "4:a43fed98-3122-4458-aca8-b4ef4ccc250c:1975"
+    },
+    "team": {
+      "identity": 11,
+      "labels": [
+        "Team"
+      ],
+      "properties": {
+        "name": "Japan",
+        "id": "1883723"
+      },
+      "elementId": "4:a43fed98-3122-4458-aca8-b4ef4ccc250c:11"
+    }
+  },
+  {
+    "m": {
+      "identity": 2205,
+      "labels": [
+        "Match"
+      ],
+      "properties": {
+        "date": "1991-11-17",
+        "stage": "Group Matches",
+        "id": "21930"
+      },
+      "elementId": "4:a43fed98-3122-4458-aca8-b4ef4ccc250c:2205"
+    },
+    "t": {
+      "identity": 2,
+      "labels": [
+        "Tournament"
+      ],
+      "properties": {
+        "year": 1991,
+        "name": "China PR 1991",
+        "id": "3373",
+        "shortName": "chinapr1991"
+      },
+      "elementId": "4:a43fed98-3122-4458-aca8-b4ef4ccc250c:2"
+    },
+    "p": {
+      "identity": 90,
+      "labels": [
+        "Person"
+      ],
+      "properties": {
+        "dob": "1964-05-02",
+        "name": "Neid Silvia",
+        "id": "2150"
+      },
+      "elementId": "4:a43fed98-3122-4458-aca8-b4ef4ccc250c:90"
+    },
+    "s": {
+      "identity": 1483,
+      "labels": [
+        "Squad"
+      ],
+      "properties": {
+        "id": "Germany in 2015"
+      },
+      "elementId": "4:a43fed98-3122-4458-aca8-b4ef4ccc250c:1483"
+    },
+    "team": {
+      "identity": 15,
+      "labels": [
+        "Team"
+      ],
+      "properties": {
+        "name": "Germany",
+        "id": "1882879"
+      },
+      "elementId": "4:a43fed98-3122-4458-aca8-b4ef4ccc250c:15"
+    }
+  },
+  {
+    "m": {
+      "identity": 2205,
+      "labels": [
+        "Match"
+      ],
+      "properties": {
+        "date": "1991-11-17",
+        "stage": "Group Matches",
+        "id": "21930"
+      },
+      "elementId": "4:a43fed98-3122-4458-aca8-b4ef4ccc250c:2205"
+    },
+    "t": {
+      "identity": 2,
+      "labels": [
+        "Tournament"
+      ],
+      "properties": {
+        "year": 1991,
+        "name": "China PR 1991",
+        "id": "3373",
+        "shortName": "chinapr1991"
+      },
+      "elementId": "4:a43fed98-3122-4458-aca8-b4ef4ccc250c:2"
+    },
+    "p": {
+      "identity": 90,
+      "labels": [
+        "Person"
+      ],
+      "properties": {
+        "dob": "1964-05-02",
+        "name": "Neid Silvia",
+        "id": "2150"
+      },
+      "elementId": "4:a43fed98-3122-4458-aca8-b4ef4ccc250c:90"
+    },
+    "s": {
+      "identity": 915,
+      "labels": [
+        "Squad"
+      ],
+      "properties": {
+        "id": "Germany in 2011"
+      },
+      "elementId": "4:a43fed98-3122-4458-aca8-b4ef4ccc250c:915"
+    },
+    "team": {
+      "identity": 15,
+      "labels": [
+        "Team"
+      ],
+      "properties": {
+        "name": "Germany",
+        "id": "1882879"
+      },
+      "elementId": "4:a43fed98-3122-4458-aca8-b4ef4ccc250c:15"
+    }
+  },
+  {
+    "m": {
+      "identity": 2205,
+      "labels": [
+        "Match"
+      ],
+      "properties": {
+        "date": "1991-11-17",
+        "stage": "Group Matches",
+        "id": "21930"
+      },
+      "elementId": "4:a43fed98-3122-4458-aca8-b4ef4ccc250c:2205"
+    },
+    "t": {
+      "identity": 2,
+      "labels": [
+        "Tournament"
+      ],
+      "properties": {
+        "year": 1991,
+        "name": "China PR 1991",
+        "id": "3373",
+        "shortName": "chinapr1991"
+      },
+      "elementId": "4:a43fed98-3122-4458-aca8-b4ef4ccc250c:2"
+    },
+    "p": {
+      "identity": 90,
+      "labels": [
+        "Person"
+      ],
+      "properties": {
+        "dob": "1964-05-02",
+        "name": "Neid Silvia",
+        "id": "2150"
+      },
+      "elementId": "4:a43fed98-3122-4458-aca8-b4ef4ccc250c:90"
+    },
+    "s": {
+      "identity": 66,
+      "labels": [
+        "Squad"
+      ],
+      "properties": {
+        "id": "Germany in 2007"
+      },
+      "elementId": "4:a43fed98-3122-4458-aca8-b4ef4ccc250c:66"
+    },
+    "team": {
+      "identity": 15,
+      "labels": [
+        "Team"
+      ],
+      "properties": {
+        "name": "Germany",
+        "id": "1882879"
+      },
+      "elementId": "4:a43fed98-3122-4458-aca8-b4ef4ccc250c:15"
+    }
+  },
+  {
+    "m": {
+      "identity": 2205,
+      "labels": [
+        "Match"
+      ],
+      "properties": {
+        "date": "1991-11-17",
+        "stage": "Group Matches",
+        "id": "21930"
+      },
+      "elementId": "4:a43fed98-3122-4458-aca8-b4ef4ccc250c:2205"
+    },
+    "t": {
+      "identity": 2,
+      "labels": [
+        "Tournament"
+      ],
+      "properties": {
+        "year": 1991,
+        "name": "China PR 1991",
+        "id": "3373",
+        "shortName": "chinapr1991"
+      },
+      "elementId": "4:a43fed98-3122-4458-aca8-b4ef4ccc250c:2"
+    },
+    "p": {
+      "identity": 366,
+      "labels": [
+        "Person"
+      ],
+      "properties": {
+        "dob": "1966-12-08",
+        "name": "Powell Hope",
+        "id": "426"
+      },
+      "elementId": "4:a43fed98-3122-4458-aca8-b4ef4ccc250c:366"
+    },
+    "s": {
+      "identity": 1036,
+      "labels": [
+        "Squad"
+      ],
+      "properties": {
+        "id": "England in 2011"
+      },
+      "elementId": "4:a43fed98-3122-4458-aca8-b4ef4ccc250c:1036"
+    },
+    "team": {
+      "identity": 13,
+      "labels": [
+        "Team"
+      ],
+      "properties": {
+        "name": "England",
+        "id": "1883720"
+      },
+      "elementId": "4:a43fed98-3122-4458-aca8-b4ef4ccc250c:13"
+    }
+  },
+  {
+    "m": {
+      "identity": 2205,
+      "labels": [
+        "Match"
+      ],
+      "properties": {
+        "date": "1991-11-17",
+        "stage": "Group Matches",
+        "id": "21930"
+      },
+      "elementId": "4:a43fed98-3122-4458-aca8-b4ef4ccc250c:2205"
+    },
+    "t": {
+      "identity": 2,
+      "labels": [
+        "Tournament"
+      ],
+      "properties": {
+        "year": 1991,
+        "name": "China PR 1991",
+        "id": "3373",
+        "shortName": "chinapr1991"
+      },
+      "elementId": "4:a43fed98-3122-4458-aca8-b4ef4ccc250c:2"
+    },
+    "p": {
+      "identity": 366,
+      "labels": [
+        "Person"
+      ],
+      "properties": {
+        "dob": "1966-12-08",
+        "name": "Powell Hope",
+        "id": "426"
+      },
+      "elementId": "4:a43fed98-3122-4458-aca8-b4ef4ccc250c:366"
+    },
+    "s": {
+      "identity": 342,
+      "labels": [
+        "Squad"
+      ],
+      "properties": {
+        "id": "England in 2007"
+      },
+      "elementId": "4:a43fed98-3122-4458-aca8-b4ef4ccc250c:342"
+    },
+    "team": {
+      "identity": 13,
+      "labels": [
+        "Team"
+      ],
+      "properties": {
+        "name": "England",
+        "id": "1883720"
+      },
+      "elementId": "4:a43fed98-3122-4458-aca8-b4ef4ccc250c:13"
+    }
+  },
+  {
+    "m": {
+      "identity": 2205,
+      "labels": [
+        "Match"
+      ],
+      "properties": {
+        "date": "1991-11-17",
+        "stage": "Group Matches",
+        "id": "21930"
+      },
+      "elementId": "4:a43fed98-3122-4458-aca8-b4ef4ccc250c:2205"
+    },
+    "t": {
+      "identity": 2,
+      "labels": [
+        "Tournament"
+      ],
+      "properties": {
+        "year": 1991,
+        "name": "China PR 1991",
+        "id": "3373",
+        "shortName": "chinapr1991"
+      },
+      "elementId": "4:a43fed98-3122-4458-aca8-b4ef4ccc250c:2"
+    },
+    "p": {
+      "identity": 453,
+      "labels": [
+        "Person"
+      ],
+      "properties": {
+        "dob": "1967-12-22",
+        "name": "Martina Voss-Tecklenburg",
+        "id": "110"
+      },
+      "elementId": "4:a43fed98-3122-4458-aca8-b4ef4ccc250c:453"
+    },
+    "s": {
+      "identity": 1805,
+      "labels": [
+        "Squad"
+      ],
+      "properties": {
+        "id": "Switzerland in 2015"
+      },
+      "elementId": "4:a43fed98-3122-4458-aca8-b4ef4ccc250c:1805"
+    },
+    "team": {
+      "identity": 15,
+      "labels": [
+        "Team"
+      ],
+      "properties": {
+        "name": "Germany",
+        "id": "1882879"
+      },
+      "elementId": "4:a43fed98-3122-4458-aca8-b4ef4ccc250c:15"
+    }
+  },
+  {
+    "m": {
+      "identity": 2205,
+      "labels": [
+        "Match"
+      ],
+      "properties": {
+        "date": "1991-11-17",
+        "stage": "Group Matches",
+        "id": "21930"
+      },
+      "elementId": "4:a43fed98-3122-4458-aca8-b4ef4ccc250c:2205"
+    },
+    "t": {
+      "identity": 2,
+      "labels": [
+        "Tournament"
+      ],
+      "properties": {
+        "year": 1991,
+        "name": "China PR 1991",
+        "id": "3373",
+        "shortName": "chinapr1991"
+      },
+      "elementId": "4:a43fed98-3122-4458-aca8-b4ef4ccc250c:2"
+    },
+    "p": {
+      "identity": 453,
+      "labels": [
+        "Person"
+      ],
+      "properties": {
+        "dob": "1967-12-22",
+        "name": "Martina Voss-Tecklenburg",
+        "id": "110"
+      },
+      "elementId": "4:a43fed98-3122-4458-aca8-b4ef4ccc250c:453"
+    },
+    "s": {
+      "identity": 1914,
+      "labels": [
+        "Squad"
+      ],
+      "properties": {
+        "id": "Germany in 2019"
+      },
+      "elementId": "4:a43fed98-3122-4458-aca8-b4ef4ccc250c:1914"
+    },
+    "team": {
+      "identity": 15,
+      "labels": [
+        "Team"
+      ],
+      "properties": {
+        "name": "Germany",
+        "id": "1882879"
+      },
+      "elementId": "4:a43fed98-3122-4458-aca8-b4ef4ccc250c:15"
+    }
+  },
+  {
+    "m": {
+      "identity": 2205,
+      "labels": [
+        "Match"
+      ],
+      "properties": {
+        "date": "1991-11-17",
+        "stage": "Group Matches",
+        "id": "21930"
+      },
+      "elementId": "4:a43fed98-3122-4458-aca8-b4ef4ccc250c:2205"
+    },
+    "t": {
+      "identity": 2,
+      "labels": [
+        "Tournament"
+      ],
+      "properties": {
+        "year": 1991,
+        "name": "China PR 1991",
+        "id": "3373",
+        "shortName": "chinapr1991"
+      },
+      "elementId": "4:a43fed98-3122-4458-aca8-b4ef4ccc250c:2"
+    },
+    "p": {
+      "identity": 730,
+      "labels": [
+        "Person"
+      ],
+      "properties": {
+        "dob": "1974-08-04",
+        "name": "Corinne Diacre",
+        "id": "191349"
+      },
+      "elementId": "4:a43fed98-3122-4458-aca8-b4ef4ccc250c:730"
+    },
+    "s": {
+      "identity": 1898,
+      "labels": [
+        "Squad"
+      ],
+      "properties": {
+        "id": "France in 2019"
+      },
+      "elementId": "4:a43fed98-3122-4458-aca8-b4ef4ccc250c:1898"
+    },
+    "team": {
+      "identity": 14,
+      "labels": [
+        "Team"
+      ],
+      "properties": {
+        "name": "France",
+        "id": "1884761"
+      },
+      "elementId": "4:a43fed98-3122-4458-aca8-b4ef4ccc250c:14"
+    }
+  }
+]
