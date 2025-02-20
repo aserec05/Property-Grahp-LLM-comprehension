@@ -1,0 +1,33 @@
+MATCH (n) RETURN DISTINCT labels(n) AS nodeTypes
+
+MATCH ()-[r]->() RETURN DISTINCT type(r) AS relationshipTypes
+
+MATCH (n) RETURN DISTINCT labels(n), keys(n) AS properties
+
+MATCH ()-[r]->() RETURN DISTINCT type(r), keys(r) AS properties
+
+MATCH (n)-[r]->(m) RETURN DISTINCT labels(n) AS startNodeType, type(r) AS relationshipType, labels(m) AS endNodeType
+
+MATCH (p:Person)-[:SCORED_GOAL]->(m:Match) RETURN p.name AS playerName, m.matchId AS matchId
+
+MATCH (t:Team)-[:PARTICIPATED_IN]->(tour:Tournament) RETURN t.name AS teamName, tour.name AS tournamentName
+
+MATCH (p:Person)-[:SCORED_GOAL]->(m:Match) 
+WITH p, COUNT(m) AS matchCount 
+WHERE matchCount >= 2 
+RETURN p.name AS playerName
+
+MATCH (t1:Team)-[:PARTICIPATED_IN]->(tour:Tournament)<-[:PARTICIPATED_IN]-(t2:Team)
+WHERE t1 <> t2
+RETURN DISTINCT t1.name AS team1, t2.name AS team2, tour.name AS tournamentName
+
+MATCH (t:Team)-[:PARTICIPATED_IN]->(tour:Tournament)
+MATCH (p:Person)-[:REPRESENTS]->(t)
+RETURN tour.name AS tournamentName, t.name AS teamName, p.name AS playerName
+
+MATCH (p:Person)-[:REPRESENTS]->(t:Team) 
+RETURN t.name AS teamName, COUNT(p) AS playerCount
+
+MATCH (p:Person)-[:SCORED_GOAL]->(m:Match)<-[:PLAYED_IN]-(t:Team)
+WITH t.name AS teamName, AVG(COUNT(p)) AS avgGoals
+RETURN teamName, avgGoals
